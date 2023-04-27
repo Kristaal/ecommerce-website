@@ -1,10 +1,16 @@
 ---
-name: 'USER STORY: <TITLE>'
+name: USER STORY
 about: template for user story
-title: ''
+title: 'USER STORY: '
 labels: ''
 assignees: ''
 
 ---
 
 As a **role** I can **capability** so that **received benefit**
+
+###Acceptance Criteria
+- 
+
+###Tasks
+- [ ]
