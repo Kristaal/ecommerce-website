@@ -1,0 +1,120 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #FAEDCD;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato';
+}
+
+.row {
+    margin:0;
+}
+
+.main-container {
+    padding: 0;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+/* searh */
+.box{
+    position: relative;
+}
+.input {
+    padding: 10px;
+    width: 50px;
+    height: 40px;
+    background: none;
+    border: none;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family:'Vidaloka', serif;
+    font-size: 15px;
+    color: #A4BC92;
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 350px;
+    background: #3b3640;
+    border-radius: 10px;
+}
+.box i{
+    position: absolute;
+    
+    top: 50%;
+    right: 5px;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    color: black;
+    transition: .2s;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+}
