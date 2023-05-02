@@ -10,10 +10,10 @@
                 Shop
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Face</a>
-                <a href="" class="dropdown-item">Hair</a>
-                <a href="" class="dropdown-item">Body</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=face" class="dropdown-item">Face</a>
+                <a href="{% url 'products' %}?category=hair" class="dropdown-item">Hair</a>
+                <a href="{% url 'products' %}?category=body" class="dropdown-item">Body</a>
+                <a href="{% url 'products' %}?category=face,hair,body,new_arrivals,clearance" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -22,9 +22,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
 
