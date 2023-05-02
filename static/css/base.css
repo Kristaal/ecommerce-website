@@ -162,9 +162,19 @@ body {
     }
     }
 
-    @media screen and (max-width: 350px) {
-        .banner-font {
-            font-size: 12px;
+@media screen and (max-width: 350px) {
+    .banner-font {
+        font-size: 12px;
            
-        }
-        }
+    }
+    }
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+        
+    body {
+        height: calc(100vh - 116px);
+    }
+    }
