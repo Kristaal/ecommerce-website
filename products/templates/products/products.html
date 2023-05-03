@@ -50,11 +50,14 @@
                         </p>
                     </div>
                 </div>
+
+<!-- Product cards -->
                 <div class="row">
                     {% for product in products %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="product-grid">
                                 {% if product.image %}
+                                <div class="product-image">
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
@@ -63,31 +66,57 @@
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
-                                <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
-                                </div>
-                                <div class="card-footer bg-white pt-0 border-0 text-left">
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                                            {% if product.category %}
-                                            <p class="small mt-1 mb-0">
+                                {% if product.category %}
+                                    <span class="product-discount-label">
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
                                                     <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                                 </a>
-                                            </p>
+                                        </span>
                                             {% endif %}
-                                            {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                                            {% else %}
-                                                <small class="text-muted">No Rating</small>
-                                            {% endif %}
-                                            {% if request.user.is_superuser %}
-                                                <small class="ml-3">
-                                                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                                </small>
-                                            {% endif %}
+                                <ul class="product-links">
+                                    {% if not in_wishlist %}
+                                    <li><a href="{% url 'add_to_wishlist' product.id user.id %}"><i class="fa fa-heart fa-lg"></i></a></li>
+                                    {% else %}
+                                    <li><a href="{% url 'remove_from_wishlist' wishlist_item.id %}"><i class="fa fa-heart fa-lg in-wishlist"></i></a></li>
+                                    {% endif %}
+                                </ul>
+                                <div class="col-12 text-center">
+                                    <div class="text-center">
+                                        <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+                                            {% csrf_token %}
+                                            <div class="form-row">
+                                                <div class="col-12 d-none">
+                                                    <div class="form-group w-50">
+                                                        <div class="input-group-selector">
+                                                            <select class="form-control custom-select" name="quantity">
+                                                                <option>1</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a>
+                                                    <input class="add-to-cart"
+                                                     type="submit" value="Add To Bag">
+                                                </a>
+                                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="product-content">
+                                    <p class="title">{{ product.name }}</p>
+                                    <div class="card-footer bg-white pt-0 border-0 text-left">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="lead mb-0 text-center font-weight-bold">${{ product.price }}</p>
+                                                {% if request.user.is_superuser %}
+                                                    <small class="change-buttons mb-0 font-weight-bold">
+                                                        <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                                    </small>
+                                                {% endif %}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
