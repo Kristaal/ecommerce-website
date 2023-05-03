@@ -3,11 +3,13 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.conf import settings
+from django.core.mail import send_mail
+from django.contrib.auth.models import User
 
-from .models import Product, Category
+from .models import Product, Category, Wishlist
 from .forms import ProductForm
 
-# Create your views here.
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -32,7 +34,7 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -43,7 +45,7 @@ def all_products(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -63,9 +65,19 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-
+    # Check if product is in users wishlist
+    user = request.user
+    in_wishlist = False
+    wishlist_item = None
+    if user.is_authenticated:
+        wishlist_item = Wishlist.objects.filter(
+            product=product, user=user).first()
+        in_wishlist = Wishlist.objects.filter(
+            product=product, user=user).exists()
     context = {
         'product': product,
+        'in_wishlist': in_wishlist,
+        'wishlist_item': wishlist_item,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -88,7 +100,7 @@ def add_product(request):
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -137,3 +149,55 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_to_wishlist(request, product_id, user_id):
+    """
+    Add products to wishlist
+    """
+    product = Product.objects.get(id=product_id)
+    user = User.objects.get(id=user_id)
+    wishlist_item, created = Wishlist.objects.get_or_create(
+        product=product, user=user)
+    if created:
+        wishlist_item.save()
+        messages.success(request, 'Product added to wishlist!')
+    else:
+        messages.info(request, 'Product is already in your wishlist.')
+
+    return redirect(reverse('product_detail', args=[product_id]))
+
+
+@login_required
+def wishlist(request):
+    """
+    View wishlist for logged in user
+    """
+    user = request.user
+    wishlist = Wishlist.objects.filter(user=user)
+    context = {
+        'wishlist': wishlist,
+    }
+    template = 'products/wishlist.html'
+
+    return render(request, template, context)
+
+
+@login_required
+def remove_from_wishlist(request, wishlist_id):
+    """
+    Remove item from wishlist
+    """
+    wishlist_item = Wishlist.objects.get(id=wishlist_id)
+
+    wishlist_item.delete()
+    messages.success(request, 'Removed from wishlist!!')
+    referer = request.META.get('HTTP_REFERER')
+    if referer:
+        if 'wishlist' in referer:
+            return redirect('wishlist')
+        else:
+            return redirect(referer)
+    else:
+        return redirect('wishlist')

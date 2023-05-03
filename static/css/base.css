@@ -365,6 +365,33 @@ input[name='q']::placeholder {
     padding: .25rem .5rem !important;
 }
 
+.fa-star {
+    color: darkgoldenrod;
+  }
+  
+  .fa-heart {
+    color: grey;
+  }
+  
+  .fa-heart:hover {
+    color: red;
+  }
+  
+  .in-wishlist {
+    color: red;
+  }
+  
+  .in-wishlist:hover {
+    color: grey;
+  }
+  
+  a:hover {
+    cursor: pointer;
+   }
+
+.fa-trash {
+    color: black;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
