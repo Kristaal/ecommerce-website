@@ -489,6 +489,13 @@ input[name='q']::placeholder {
     font-weight: 400;
     text-decoration: line-through;
 }
+
+.btn-review{
+    background-color: #D14D72;
+    color: white;
+    border-color: #D14D72;
+    
+}
 @media screen and (max-width: 990px){
     .product-grid{ margin-bottom: 30px;
     text-align: center; }}

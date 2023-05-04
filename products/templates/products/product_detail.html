@@ -115,6 +115,57 @@
                     </form>
                 </div>
             </div>
+                    <div class="container mb-3">
+                        <div class="row ">
+                            <div class="col-md-7  mb-4 me-5  mt-3">
+                    <h5 class="mt-5">Product Reviews</h5>
+                <div class="col-12">
+                    {% for review in product.reviews.all %}
+                    <div class="col-12 card bg-light mt-3">
+                        <div class="card-header">
+                            <strong>Review From: </strong> {{ review.user }} | 
+                            <strong>Date: </strong> {{ review.date|date:'Y-m-d' }} | 
+                            <strong>Stars: </strong> {{ review.stars }}<i class="fa fa-star"></i>
+                        </div>
+                        <div class="card-body">
+                            {{ review.content|linebreaks }}
+                        </div>
+                    </div>
+                    {% empty %}
+                    <div class="col-12">
+                        <p>No reviews to show. Give us the first!</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            
+                <hr>
+            </div>
+                <div class="col-md-4 mb-4  mt-3">
+                    {% if request.user.is_authenticated %}
+                    <form method="POST" id="review_form">
+                        {% csrf_token %}
+                        <h5 class="mt-5">Give Review</h5>
+                        <label for="stars">Stars <i class="fa fa-star"></i></label>
+                        <select class="form-select" name="stars" id="stars" selected="3">
+                            <option value="1">1</option>
+                            <option value="2">2</i></option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5" selected>5</i></option>
+                        </select>
+                        <label for="content">Review</label>
+                        <textarea class="form-control" name="content" id="content" cols="30" rows="5"></textarea>
+                        <button class="btn-review mt-3" type="submit">Submit Review</button>
+
+                    </form>
+                    {% else %}
+                    <p><a href="{% url 'account_login' %}">Login </a>or <a href="{% url 'account_signup' %}">Sign Up
+                        </a>to give a review.</p>
+                    {% endif %}
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
