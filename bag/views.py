@@ -10,12 +10,11 @@ def view_bag(request):
 
     return render(request, 'bag/bag.html')
 
+
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
-
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url')
     size = None
     if 'product_size' in request.POST:
         size = request.POST['product_size']
@@ -41,7 +40,7 @@ def add_to_bag(request, item_id):
             messages.success(request, f'Added {product.name} to your bag')
 
     request.session['bag'] = bag
-    return redirect(redirect_url)
+    return redirect(reverse('product_detail', args=[item_id]))
     
 
 def adjust_bag(request, item_id):
