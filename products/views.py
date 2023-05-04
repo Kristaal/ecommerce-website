@@ -7,8 +7,8 @@ from django.conf import settings
 from django.core.mail import send_mail
 from django.contrib.auth.models import User
 
-from .models import Product, Category, Wishlist
-from .forms import ProductForm
+from .models import Product, Category, Wishlist, ProductReview
+from .forms import ProductForm, ReviewForm
 
 
 def all_products(request):
@@ -65,6 +65,7 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    form = ReviewForm()
     # Check if product is in users wishlist
     user = request.user
     in_wishlist = False
@@ -74,8 +75,29 @@ def product_detail(request, product_id):
             product=product, user=user).first()
         in_wishlist = Wishlist.objects.filter(
             product=product, user=user).exists()
+      # Add a product review
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.user = request.user
+            review.product = product
+            review = form.save()
+            messages.success(request, 'Successfully added review!')
+            store_email = settings.DEFAULT_FROM_EMAIL
+            subject = f'You got a new review for {review.product}!'
+            body = f'New review from: {review.user}. Login to admin dashboard \
+                to review it. Product: {review.product} \
+                    https://beautybliss.herokuapp.com/admin/'
+            send_mail(subject, body, store_email, [store_email])
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to add review.\
+                 Please check that the form is valid.')
+       
     context = {
         'product': product,
+        'form': form,
         'in_wishlist': in_wishlist,
         'wishlist_item': wishlist_item,
     }
