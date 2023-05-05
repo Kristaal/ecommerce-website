@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_field %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="text-black mt-3">Contact Form</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-7 py-3 contact-form">
+            <div class="container text-center">
+            <form method="POST" action="" class="form mb-2">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="text-center" >
+                    <button class="button-62 ml-5" role="submit">Submit form</button>
+                </div>
+            </form>
+            </div>
+            
+        </div>
+        <div class="col-12 col-md-5">
+            <h2 class="text-uppercase custom-heading fw-bold mb-4 text-secondary">Our Address</h2>
+            <div id="map" style="min-height: 360px;"></div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 3,
+            center: {
+                lat: 46.619261,
+                lng: -33.134766
+            }
+        });
+    }
+</script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4gb_5Wwy3HlX-NHMu2e804dhRUZW90Lc&callback=initMap"></script>
+{% endblock %}
