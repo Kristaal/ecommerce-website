@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -49,6 +49,13 @@ def all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+    user = request.user
+    wished_list = []
+    if user.is_authenticated:
+        wishlist = Wishlist.objects.filter(user=user)
+        for i in wishlist:
+            wished_list.append(i.product)   
+
     current_sorting = f'{sort}_{direction}'
 
     context = {
@@ -56,6 +63,7 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'wished_list': wished_list,
     }
 
     return render(request, 'products/products.html', context)
@@ -75,7 +83,7 @@ def product_detail(request, product_id):
             product=product, user=user).first()
         in_wishlist = Wishlist.objects.filter(
             product=product, user=user).exists()
-      # Add a product review
+    # Add a product review
     if request.method == 'POST':
         form = ReviewForm(request.POST)
         if form.is_valid():
@@ -174,6 +182,24 @@ def delete_product(request, product_id):
 
 
 @login_required
+def wishlist(request):
+    """
+    View wishlist for logged in user
+    """
+    if request.user.is_authenticated:
+        user = request.user
+        wishlist = Wishlist.objects.filter(user=user)
+        items_count = wishlist.count()
+    context = {
+        'wishlist': wishlist,
+        'items_count': items_count
+    }
+    template = 'products/wishlist.html'
+
+    return render(request, template, context)
+
+
+@login_required
 def add_to_wishlist(request, product_id, user_id):
     """
     Add products to wishlist
@@ -190,29 +216,51 @@ def add_to_wishlist(request, product_id, user_id):
 
     return redirect(reverse('product_detail', args=[product_id]))
 
-
-@login_required
-def wishlist(request):
-    """
-    View wishlist for logged in user
-    """
-    user = request.user
-    wishlist = Wishlist.objects.filter(user=user)
-    context = {
-        'wishlist': wishlist,
-    }
-    template = 'products/wishlist.html'
-
-    return render(request, template, context)
-
-
 @login_required
 def remove_from_wishlist(request, wishlist_id):
     """
     Remove item from wishlist
     """
     wishlist_item = Wishlist.objects.get(id=wishlist_id)
+    wishlist_item.delete()
+    messages.success(request, 'Removed from wishlist!!')
+    referer = request.META.get('HTTP_REFERER')
+    if referer:
+        if 'wishlist' in referer:
+            return redirect('wishlist')
+        else:
+            return redirect(referer)
+    else:
+        return redirect('wishlist')
 
+
+@login_required
+def add_to_wishlist_all_products(request, product_id, user_id):
+    """
+    Add product to wishlist
+    """
+    product = Product.objects.get(id=product_id)
+    user = User.objects.get(id=user_id)
+    wishlist_item, created = Wishlist.objects.get_or_create(
+                                product=product,
+                                user=user
+    )
+    if created:
+        wishlist_item.save()
+        messages.success(request, 'Product added to wishlist!')
+    else:
+        messages.info(request, 'Product is already in your wishlist.')
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
+
+@login_required
+def remove_from_wishlist_all_products(request, product_id, user_id):
+    """
+    Remove item from wishlist
+    """
+    product = Product.objects.get(id=product_id)
+    user = User.objects.get(id=user_id)
+    wishlist_item = Wishlist.objects.filter(product=product, user=user)
     wishlist_item.delete()
     messages.success(request, 'Removed from wishlist!!')
     referer = request.META.get('HTTP_REFERER')

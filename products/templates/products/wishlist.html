@@ -1,45 +1,79 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="#">
+{% endblock %}
+
 {% block content %}
+<div class="container-fluid my-3">
 
-<div class="container h-100 py-5">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-10">
-            <div class="text-center mb-4">
-                <h3 class="fw-normal mb-0 text-black">Wishlist</h3>
-            </div>
-
+    <div class="row">
+        <div class="col">
             {% if wishlist %}
-            {% for item in wishlist %}
-            <div class="card rounded-3 mb-4">
-                <div class="card-body p-4">
-                    <div class="row d-flex justify-content-between align-items-center">
-                        <div class="col-md-2 col-lg-2 col-xl-2">
-                            {% if item.product.image %}
-                            <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded-3">
-                            {% else %}
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}" class="img-fluid rounded-3">
-                            {% endif %}
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-8 cart">
+                        <div class="title">
+                            <div class="row pr-2">
+                                <div class="col"><h4><b>Wishlist</b></h4></div>
+                                <div class="col align-self-center text-right text-muted">{{ items_count }} items</div>
+                            </div>
                         </div>
-                        <div class="col-md-3 col-lg-3 col-xl-3">
-                            <p class="lead fw-normal mb-2">{{ item.product.name }}</p>
-                            <p class="text-muted fw-normal mb-2">{{ item.product.sku }}</p>
+                        {% for item in wishlist %}
+                        <div class="row border-top border-bottom">
+                            <div class="row align-items-center bag-item-row">
+                                <div class="col-3">
+                                    <img class="img-fluid" src="{{ item.product.image.url }}">
+                                </div>
+                                <div class="col-9">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-3">
+                                            <div class="row text-muted">{{ item.product.name }}</div>
+                                            <div class="row">{{ item.product.genre.friendly_name }}</div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div>
+                                                € {{ item.product.price }}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <a href="{% url 'remove_from_wishlist' item.id %}"><i class="fas fa-trash fa-2x"></i></a>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <form action="{% url 'add_to_bag' item.product.id %}" method="POST">
+                                                {% csrf_token %}
+                                                <select class="d-none" name="quantity">
+                                                    <option>1</option>
+                                                </select>
+                                                <button class="btn btn-link text-muted" type="submit"><i class="fa-brands fa-opencart fa-2x"></i></button>
+                                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-3 col-lg-3 col-xl-3">
-                            <a href="{% url 'product_detail' item.product.id %}" class="btn btn-secondary">Visit Product</a>
-                        </div>
-                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                            <a href="{% url 'remove_from_wishlist' item.id %}"><i class="fas fa-trash fa-lg"></i></a>
+                        {% endfor %}
+                        <div class="back-to-shop">
+                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Searching</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            {% endfor %}
             {% else %}
-            <div class="text-center mb-4">
-                <p>Your wishlist is empty. Maybe add some <a href="{% url 'products' %}">products</a>?</p>
-            </div>
+                <p class="lead mb-5">{{ user.username}}, your wishlist is empty.</p>
+                <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 btn-lg">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">Keep Searching</span>
+                </a>
             {% endif %}
         </div>
     </div>

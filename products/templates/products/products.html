@@ -74,11 +74,15 @@
                                         </span>
                                             {% endif %}
                                 <ul class="product-links">
-                                    {% if not in_wishlist %}
-                                    <li><a href="{% url 'add_to_wishlist' product.id user.id %}"><i class="fa fa-heart fa-lg"></i></a></li>
+                                    {% if user.is_authenticated %}
+                                    {% if product in wished_list %}
+                                    <a href="{% url 'remove_from_wishlist_all' product.id user.id %}"><i class="fa fa-heart text-secondary"></i></a>
                                     {% else %}
-                                    <li><a href="{% url 'remove_from_wishlist' wishlist_item.id %}"><i class="fa fa-heart fa-lg in-wishlist"></i></a></li>
+                                    <a href="{% url 'add_to_wishlist_all' product.id user.id %}"><i class="fa fa-heart text-danger"></i></a>
                                     {% endif %}
+                                {% else %}
+                                    <a href="{% url 'account_login' %}"><i class="fa fa-heart fa fa-heart text-secondary"></i></a>
+                                {% endif %}
                                 </ul>
                                 <div class="col-12 text-center">
                                     <div class="text-center">
