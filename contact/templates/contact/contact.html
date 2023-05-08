@@ -7,7 +7,7 @@
     <div class="container header-container">
         <div class="row">
             <div class="col text-center">
-                <h2 class="text-black mt-3">Contact Form</h2>
+                <h2 class="logo-font">Contact Form</h2>
                 <hr>
             </div>
         </div>
@@ -30,8 +30,11 @@
             
         </div>
         <div class="col-12 col-md-5">
-            <h2 class="text-uppercase custom-heading fw-bold mb-4 text-secondary">Our Address</h2>
             <div id="map" style="min-height: 360px;"></div>
+            <h2 class="custom-heading fw-bold mt-2 mb-4">Address:</h2>
+            <h5><i class="fas fa-home me-3"></i> Tralee, Ireland</h5>
+            <h5><i class="fas fa-phone me-3"></i> + 01 234 567 88</h5>
+            <h5><i class="fa-solid fa-envelope"></i> workkris@gmail.com</h5>
         </div>
     </div>
 </div>
@@ -54,4 +57,5 @@
 </script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4gb_5Wwy3HlX-NHMu2e804dhRUZW90Lc&callback=initMap"></script>
+<script src="{% static 'contact/js/map.js' %}"></script>
 {% endblock %}
