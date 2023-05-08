@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-12 col-lg-8 offset-lg-2 text-center title-details">
+            <h1>{{ post.title}}</h1>
+            <p>{{ post.excerpt }}</p>
+        </div>
+    </div>
+    <div class="row content-row">
+        <div class="col-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3 mt-3 mb-5 content">
+            {{ post.content|safe }}
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+        var value = $('.content').val()
+        console.log(value);
+        $('textarea.content-body').summernote('pasteHTML', value);
+    </script>
+{% endblock %}

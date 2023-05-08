@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row posts-row">
+        {% for post in page_obj %}
+        <div class="col-sm-12 col-md-6 col-lg-4 py-1 mt-2">
+            <div class="card">
+                <div class="content">
+                <p class="date">{{ post.date_created }}</p>
+                <p class="title ">{{ post.title }}</p>
+                </div>
+                <a href="{% url 'post-details' post.id %}" class="text-decoration-none">
+                    <img src="{{ post.featured_image.url }}" alt="{{ post.title }}-image">
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <!-- pagination -->
+    <div class="row d-flex justify-content-center text-center pagination-row">
+        {% if page_obj.has_other_pages %}
+        <div class="btn-group p-2" role="group" aria-label="Item pagination">
+            {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}" class="btn btn-dark btn-sm">&laquo;</a>
+            {% endif %}
+
+            {% for page_number in page_obj.paginator.page_range %}
+            {% if page_obj.number == page_number %}
+            <button class="btn btn-dark btn-sm active">
+                <span>{{ page_number }} <span class="sr-only">(current)</span></span>
+            </button>
+            {% else %}
+            <a href="?page={{ page_number }}" class="btn btn-dark btn-sm">
+                {{ page_number }}
+            </a>
+            {% endif %}
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}" class="btn btn-dark btn-sm">&raquo;</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+
+</div>
+
+
+{% endblock %}
