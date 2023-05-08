@@ -3,14 +3,19 @@ from .forms import ContactForm
 from django.contrib import messages
 
 
+def get_user_instance(request):
+    """
+    retrieves user details if logged in
+    """
+
+    user_email = request.user.email
+    user = User.objects.filter(email=user_email).first()
+    return user
+
+
 def contact(request):
     """A view to return contact form and page"""
     form = ContactForm()
-
-    """customer must be logged in to prevent spam."""
-    if not request.user.is_authenticated:
-        messages.error(request, 'Please login to contact us')
-        return redirect(reverse('home'))
 
     if request.method == 'POST':
         form = ContactForm(request.POST)

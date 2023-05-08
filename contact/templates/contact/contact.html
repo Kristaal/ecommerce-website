@@ -16,22 +16,59 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row">
+    <div class="row contact-row">
         <div class="col-12 col-md-7 py-3 contact-form">
-            <div class="container text-center">
-            <form method="POST" action="" class="form mb-2">
-                {% csrf_token %}
-                {{ form | crispy }}
-                <div class="text-center" >
-                    <button class="button-62 ml-5" role="submit">Submit form</button>
-                </div>
-            </form>
-            </div>
-            
-        </div>
+            <div class="row text-center">
+                <div class="col-12">
+            {% if not user.is_authenticated %}
+                    <div class="row">
+                        <div class="col-8 offset-2">
+                            <h2 class="fw-bold mt-2 mb-4">Please login to send a message!</h2>
+                            <a href="{% url 'account_login' %}" class="btn btn-success rounded m-2">
+                                <span class="font-weight-bold">Login</span>
+                            </a>
+                            <a href="{% url 'home' %}" class="btn btn-secondary rounded m-2">
+                                <span class="font-weight-bold">Home</span>
+                            </a>
+                        </div>
+                    </div> 
+            {% else %}
+
+            {% if user.is_authenticated %}
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <form method="POST" class="text-black" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form | crispy }}
+        
+                        <button class="button-62 ml-5" type="submit">Send</button>
+                    </form>
+             <!-- Form Errors from stack overflow -->
+             {% if contact_form.errors %}
+             {% for field in contact_form %}
+             {% for error in field.errors %}
+             <div class="alert alert-danger">
+                 <strong>{{ error|escape }}</strong>
+             </div>
+             {% endfor %}
+             {% endfor %}
+             {% for error in contact_form.non_field_errors %}
+             <div class="alert alert-danger">
+                 <strong>{{ error|escape }}</strong>
+             </div>
+             {% endfor %}
+             {% endif %}
+         </div>
+     </div>
+     {% endif %}
+     {% endif %}  
+ </div>   
+</div>
+</div>  
+
         <div class="col-12 col-md-5">
             <div id="map" style="min-height: 360px;"></div>
-            <h2 class="custom-heading fw-bold mt-2 mb-4">Address:</h2>
+            <h2 class="fw-bold mt-2 mb-4">Address:</h2>
             <h5><i class="fas fa-home me-3"></i> Tralee, Ireland</h5>
             <h5><i class="fas fa-phone me-3"></i> + 01 234 567 88</h5>
             <h5><i class="fa-solid fa-envelope"></i> workkris@gmail.com</h5>
