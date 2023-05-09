@@ -5,23 +5,30 @@
     <link rel="stylesheet" href="#">
 {% endblock %}
 
-{% block content %}
-<div class="container-fluid my-3">
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="logo-font">Wishlist</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+{% endblock %}
 
+{% block content %}
+<div class="row pr-2">
+    <div class="col align-self-center text-center text-muted">{{ items_count }} items</div>
+</div>
+<div class="container-fluid my-3">
     <div class="row">
         <div class="col">
             {% if wishlist %}
             <div class="card">
                 <div class="row">
-                    <div class="col-md-8 cart">
-                        <div class="title">
-                            <div class="row pr-2">
-                                <div class="col"><h4><b>Wishlist</b></h4></div>
-                                <div class="col align-self-center text-right text-muted">{{ items_count }} items</div>
-                            </div>
-                        </div>
+                    <div class="col-md-12 cart">
                         {% for item in wishlist %}
-                        <div class="row border-top border-bottom">
+                        <div class="row text-center border-top border-bottom">
                             <div class="row align-items-center bag-item-row">
                                 <div class="col-3">
                                     <img class="img-fluid" src="{{ item.product.image.url }}">
@@ -38,7 +45,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-3">
-                                            <a href="{% url 'remove_from_wishlist' item.id %}"><i class="fas fa-trash fa-2x"></i></a>
+                                            <a href="{% url 'remove_from_wishlist' item.id %}"><i class="fas fa-trash text-muted "></i></a>
                                         </div>
                                         <div class="col-md-6 col-lg-3">
                                             <form action="{% url 'add_to_bag' item.product.id %}" method="POST">
@@ -46,7 +53,7 @@
                                                 <select class="d-none" name="quantity">
                                                     <option>1</option>
                                                 </select>
-                                                <button class="btn btn-link text-muted" type="submit"><i class="fa-brands fa-opencart fa-2x"></i></button>
+                                                <button class="btn btn-link text-muted" type="submit"><i class="fa-solid fa-cart-shopping text-muted"></i></button>
                                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                             </form>
                                         </div>
@@ -56,7 +63,7 @@
                         </div>
                         {% endfor %}
                         <div class="back-to-shop">
-                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                            <a href="{% url 'products' %}" class="button-62 mt-5 ml-5 mb-5">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
@@ -68,7 +75,7 @@
             </div>
             {% else %}
                 <p class="lead mb-5">{{ user.username}}, your wishlist is empty.</p>
-                <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 btn-lg">
+                <a href="{% url 'products' %}" class="button-62 ml-5">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
                     </span>
