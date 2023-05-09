@@ -134,15 +134,136 @@
     
         {% block page_header %}
         {% endblock %}
-    
+      
         {% block content %}
         {% endblock %}
-    
-        {% block postloadjs %}
-        <script type="text/javascript">
-        $('.toast').toast('show');
+
+
+    <!-- Footer taken from MDBootstrap.com -->
+    <footer class="text-center text-lg-start text-black">
+    <!-- Section: Mailchimp Signup Form -->
+    <div class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
+       
+    </div>
+    <!-- Section: Links  -->
+    <section>
+        <div class="container text-center text-md-start pt-5">
+          <div class="row">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Information: Name/Educational Notice -->
+              <h2 class="fw-bold mb-4">
+                <i class="fa-brands fa-shopify" style="color:#D14D72;"></i><span class="ml-1">Beauty Bliss</span>
+              </h2>
+              <p>You can find us:</p>
+              <!-- Socials -->
+              <p>
+                <a class="text-reset text-decoration-none fs-3 p-2" href="https://github.com/Kristaal?tab=repositories" rel="noopener noreferrer nofollow"
+                  target="_blank"><i class="fa-brands fa-square-github fa-2x "></i><span
+                    class="sr-only">GitHub</span></a>
+                <a class="text-reset text-decoration-none fs-3 p-2"
+                  href="" rel="noopener noreferrer nofollow"
+                  target="_blank"><i class="fab fa-facebook-f fa-2x "></i><span
+                    class="sr-only">Facebook</span></a>
+              </p>
+            </div>
+  
+            <!-- Links -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h2 class="fw-bold mb-4 ">
+                    Links
+                  </h2>
+                  <p>
+                    {% if request.user.is_authenticated %}
+                    <a href="{% url 'profile' %}" class="text-reset">Orders</a>
+                    {% else %}
+                    <a href="{% url 'account_login' %}" class="text-reset">Orders</a>
+                    {% endif %}
+                  </p>
+                  <p>
+                    <a href="{% url 'contact' %}" class="text-reset">Contact Us</a>
+                  </p>
+                  <p>
+                    <a href="https://www.privacypolicygenerator.info/live.php?token=bEOrggUFXhMaVMYlCsGUXitNC7AUqJZz"
+                      rel="noopener noreferrer nofollow" target="_blank" class="text-reset">Privacy Policy</a>
+                  </p>
+            </div>
+            <!-- Contacts -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h2 class="fw-bold mb-4">Contact</h2>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Tralee, Ireland</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i> bbliss@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> +353 85 000 0000</p>
+            </div>
+  
+            <!-- mailchimp-->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                    #mc_embed_signup{background:#fff; clear:left; width:300px;}
+                </style>
+                    <div id="mc_embed_signup">
+                    <form 
+                    action="https://gmail.us11.list-manage.com/subscribe/post?u=c4e558d086fd05f2b79640789&amp;id=133af14161&amp;f_id=003d99e0f0" 
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" 
+                    target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                    <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                    </label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                    </div>
+                    <div id="mce-responses" class="clear foot">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>   
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c4e558d086fd05f2b79640789_133af14161" tabindex="-1" value=""></div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                <p class="brandingLogo"></p>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                    </div>
+        </div>
+      </section>
+       <!-- Copyright -->
+    <div class="text-center p-2 text-white" style="background-color: #D14D72;">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="{% url 'home' %}">BEAUTY BLISS</a>
+      </div>
+  
+    </footer>
+
+    {% block postloadjs %}
+    <script>
+    $('.toast').toast('show');
+    </script>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>
+    (function($) {
+        window.fnames = new Array(); 
+        window.ftypes = new Array();
+        fnames[0]='EMAIL';
+        ftypes[0]='email';
+        fnames[1]='FNAME';
+        ftypes[1]='text';
+        fnames[2]='LNAME';
+        ftypes[2]='text';
+        fnames[3]='ADDRESS';
+        ftypes[3]='address';
+        fnames[4]='PHONE';
+        ftypes[4]='phone';
+        fnames[5]='BIRTHDAY';
+        ftypes[5]='birthday';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
         </script>
-        {% endblock %}
-        
+  {% endblock %}
     </body>
 </html>
