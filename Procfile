@@ -1,0 +1,1 @@
+web: gunicorn beautybliss.wsgi:application
