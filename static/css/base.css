@@ -29,7 +29,6 @@ body {
     border: none;
     border-radius: 50px;
     box-sizing: border-box;
-    font-family:'Vidaloka', serif;
     font-size: 15px;
     color: #A4BC92;
     outline: none;
@@ -106,6 +105,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
 }
 
 .main-logo-link {
@@ -397,7 +397,6 @@ input[name='q']::placeholder {
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 2.5;
@@ -427,7 +426,6 @@ input[name='q']::placeholder {
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 2.5;
