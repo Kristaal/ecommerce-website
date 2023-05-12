@@ -342,24 +342,142 @@ AWS S3 bucket was chosen to store website static and media data. It's a reliable
 
 ## Database
 
+
+
 <details><summary>See Database Image</summary>
-<img src="">
+<img src="docs/database.png">
 </details>
-<hr>
 
 ## Models  
 
-### User Model
+User Model
 
 | Key        | Name         | Type        |
 | ---------- | ------------ | ----------- |
-|  |      |    |
+| PrimaryKey | user_id      | AutoField   |
+|            | password     | VARCHAR(45) |
+|            | last_login   | VARCHAR(45) |
+|            | is_superuser | BOOLEAN     |
+|            | username     | VARCHAR(45) |
+|            | first_name   | VARCHAR(45) |
+|            | last_name    | VARCHAR(45) |
+|            | email        | VARCHAR(45) |
+|            | is_staff     | BOOLEAN     |
+|            | is_active    | BOOLEAN     |
+|            | date_joined  | VARCHAR(45) |
 
-### User Profile Model
+User Profile Model
 
-| Key        | Name         | Type        |
-| ---------- | ------------ | ----------- |
-|  |      |    |
+| Key        | Name                 | Type          |
+| ---------- | -------------------- | ------------- |
+| PrimaryKey | user_profile_id      | AutoField     |
+| ForeignKey | user                 | User model    |
+|            | default_phone_number | CharField[20] |
+|            | default_street_address1| CharField[80] |
+|            | default_street_address2 | CharField[80] |
+|            | default_town_or_city | CharField[40] |
+|            | default_county       | CharField[80] |
+|            | default_postcode     | CharField[20] |
+|            | default_country      | CountryField |
+
+Products Model
+
+| Key        | Name        | Type           |
+| ---------- | ----------- | -------------- |
+| PrimaryKey | product_id  | AutoField      |
+| ForeignKey | category    | Category model |
+|            | sku         | CharField[254] |
+|            | name        | CharField[254] |
+|            | description | TextField      |
+|            | has_sizes   | BooleanField   |
+|            | price       | DecimalField   |
+|            | rating      | DecimalField   |
+|            | image_url   | URLField       |
+|            | image       | ImageField     |
+
+Category Model
+
+| Key        | Name        | Type             |
+| ---------- | ----------- | --------------   |
+| PrimaryKey | id          | AutoField        |
+|            | name        | CharField[150]   |
+|            | friendly_name | CharField[254] |
+
+
+Product Review Model
+
+| Key        | Name        | Type           |
+| ---------- | ----------- | -------------- |
+| PrimaryKey | review_id   | AutoField      |
+| ForeignKey | product     | Product model  |
+| ForeignKey | user        | User model  |
+|            | content     | TextField      |
+|            | stars       | IntegerField   |
+|            | date        | DateTimeField  |
+
+
+Wishlist Model
+
+| Key        | Name        | Type                |
+| ---------- | ----------- | --------------      |
+| PrimaryKey | wishlist_id | AutoField           |
+| ForeignKey | product     | Product model       |
+| ForeignKey | user        | User model          |
+
+Post Model
+
+| Key        | Name           | Type           |
+| ---------- | -----------    | -------------- |
+| PrimaryKey | post_id        | AutoField      |
+|            | title          | CharField[100] |
+|            | content        | TextField      |
+|            | excerpt        | TextField      |
+|            | featured_image | ImageField     |
+|            | date_created   | DateTimeField  |
+
+Contact Model
+
+| Key        | Name        | Type             |
+| ---------- | ----------- | --------------   |
+| PrimaryKey | id          | AutoField        |
+|            | name        | CharField[150]   |
+|            | email       | EmailField       |
+|            | reason      | CharField[15]    |
+|            | message     | TextField        |
+
+Order Model
+
+| Key        | Name            | Type               |
+| ---------- | --------------- | ------------------ |
+| PrimaryKey | order_id        | AutoField          |
+|            | order_number    | CharField[32]      |
+| ForeignKey | user_profile    | UserProfile Model |
+|            | full_name       | CharField[50]      |
+|            | email           | EmailField[254]    |
+|            | phone_number    | CharField[20]      |
+|            | country         | CountryField       |
+|            | postcode        | CharField[20]      |
+|            | town_or_city    | CharField[40]      |
+|            | street_address1 | CharField[80]      |
+|            | street_address2 | CharField[80]      |
+|            | county          | CharField[80]      |
+|            | date            | DateTimeField      |
+|            | delivery_cost   | DecimalField[6]    |
+|            | order_total     | DecimalField[10]   |
+|            | grand_total     | DecimalField[10]   |
+|            | original_bag    | TextField          |
+|            | stripe_pid      | CharField          |
+
+OrderLineItem Model
+
+| Key        | Name             | Type            |
+| ---------- | ---------------- | --------------- |
+| PrimaryKey | OrderLineItem_id | AutoField       |
+| ForeignKey | order            | Order Model     |
+| ForeignKey | product          | Product Model   |
+| ForeignKey | product_size     | CharField       |
+|            | quantity         | IntegerField    |
+|            | lineitem_total  | DecimalField[6] |
 
 ##### Back to [top](#table-of-contents)
 <hr>
