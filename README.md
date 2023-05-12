@@ -274,6 +274,7 @@ A sitemap.xml file This file was added to help speed up content discovery for se
 
 <details><summary>Kanban</summary>
 
+![Kanban Middle](docs/agile/kanban_1.png)
 ![Kanban End](docs/agile/kanban.png)
 
 </details>
@@ -288,17 +289,18 @@ A sitemap.xml file This file was added to help speed up content discovery for se
 
 ### Colors
 
+The Beauty Bliss website have a color scheme that is related to beauty, sweetness, femininity and makeup products. The website incorporates softer and vibrant shades of pink and combined with other colors, such as white and black to create a cohesive and visually appealing color palette that reflects the brand's identity and values. This can create a sense of elegance and sophistication that aligns with the beauty industry's aesthetics.
+
 <details><summary>See Color Palette</summary>
 
-![Color Palette]()
+![Color Palette](docs/color_palette.png)
 </details>
+<br>
 
 ### Fonts
 
-<details><summary>See Font Image</summary>
+The font was selected from Google Fonts, Playfair Display and Lato.It is a popular choice for headings, titles, and other display purposes, as it has a classic and elegant look that is well-suited to a range of design styles. The font's unique combination of thick and thin strokes, along with its generous spacing and high contrast, give it a distinct and sophisticated appearance.
 
-![Font Image]()
-</details>
 <hr>
 
 # Structure
