@@ -283,7 +283,7 @@ A sitemap.xml file This file was added to help speed up content discovery for se
 
 ## Wireframes
 
-<hr>
+##### Back to [top](#table-of-contents)<hr>
 
 ## Design
 
@@ -301,21 +301,42 @@ The Beauty Bliss website have a color scheme that is related to beauty, sweetnes
 
 The font was selected from Google Fonts, Playfair Display and Lato.It is a popular choice for headings, titles, and other display purposes, as it has a classic and elegant look that is well-suited to a range of design styles. The font's unique combination of thick and thin strokes, along with its generous spacing and high contrast, give it a distinct and sophisticated appearance.
 
-<hr>
+##### Back to [top](#table-of-contents)<hr>
 
-# Structure
+## Structure
+
+The site was designed for the user to be familiar with the layout such as a navigation bar along the top of the pages and a hamburger menu button for smaller screen.
+The pages are structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees the home page, with a call to action.
 
 ## Website pages
+The site consists of the following pages:
+
+- Home page
+- Products page
+- Product details page
+- Blog page
+- Post details page
+- Contact page
+- Register page
+- Login page
+- Logout page
+- Profile page
+- Wishlist page
+- Bag page
+- Checkout page
+- Checkout success page
 
 ##### Back to [top](#table-of-contents)<hr>
 
 ## AWS 
 
+AWS S3 bucket was chosen to store website static and media data. It's a reliable, scalable, and inexpensive cloud computing service. This service allows to easily store static and media files and provides protection for my data.
+
 <details><summary>See AWS Images</summary>
 
-![aws bucket]()
-![aws media]()
-![aws static]()
+![aws bucket](docs/aws/aws_bucket.png)
+![aws media](docs/aws/aws_media.png)
+![aws static](docs/aws/aws_static.png)
 </details>
 <hr>
 
