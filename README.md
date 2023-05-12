@@ -22,6 +22,7 @@
     - [Social Media](#social-media)
     - [Blog](#blog)
     - [Free Delivery](#free-delivery)
+    - [SEO](#seo)
 - [User Goals](#user-goals)
 - [Site Owner Goals](#site-owner-goals)
 - [User Experience](#user-experience)
@@ -146,19 +147,48 @@ We will offer free delivery on all orders above a certain threshold to incentivi
 </details> 
 <br>
 
+### SEO
+In order to improve the sites search engine ranking two important files were added to the project :
+
+A sitemap.xml file This file was added to help speed up content discovery for search engines when they crawl and index the web applications. A robots.txt file This fil was added to acknowledge that search engines are allowed on the site and that they may have free access to it. A robots.txt file is a simple text file that tells search engines where they are not allowed to go on a website. It lists out any folders or files that will not be crawled or indexed by search engine spiders.
+
+[Robots.txt](robots.txt)  
+[Sitemap.xml](sitemap.xml)  
+<br>
+
 ##### Back to [top](#table-of-contents)<hr>
 
 ## User Goals
 
-## Site Owner Goals
+- Easily browsing and discovering new beauty products and trends
+- Accessing detailed product information and reviews to make informed purchasing decisions
+- Access to the latest news and trends of beauty industry through the blog
+- Contact information for customer service and support, including phone, email
+- Track user orders to have access to order information
+- Save favorite products for future reference in wish list
+- The payment options available, including any security measures in place to protect customer information.
 
+## Site Owner Goals
+- To create a visually appealing and user-friendly website that engages and converts visitors into loyal customers
+- To offer a wide range of high-quality beauty products that cater to diverse tastes, needs, and budgets, ensuring customer satisfaction and loyalty
+- To offer secure and seamless payment options that build trust and confidence among customers, reducing cart abandonment rates and increasing sales
+- Generate revenue through the sale of products in the ecommerce shop
 <hr>
 
 ## User Experience
-
 ### Target Audience
+- Beauty enthusiasts of all ages who are passionate about skincare, makeup, and other beauty products and are always looking for the latest trends and innovations in the industry
+- Health and wellness seekers: people who prioritize natural and organic beauty products that align with their values and promote overall health and well-being
+- Professionals in the beauty industry: makeup artists, hairstylists, estheticians, and other beauty professionals who need high-quality and reliable beauty products to serve their clients and grow their business
+- Eco-conscious consumers: people who care about the environment and sustainability, and are looking for beauty products that are cruelty-free, vegan, or eco-friendly
 
 ### User Requirements and Expectations
+- Intuitive and easy-to-use website: users expect a website that is easy to navigate and understand, with clear and concise menus, categories, and search options. They want a site that loads quickly and is responsive to their clicks and inputs
+- Wide range of products: users want access to a diverse and extensive range of beauty products, from popular and well-known brands to niche and emerging ones. They expect products that are up-to-date, high-quality, and competitively priced
+- Detailed product information: users expect detailed and accurate product descriptions, images, and customer reviews that help them make informed decisions about what to buy
+- Secure and easy payment options: users expect secure and convenient payment option. They want to know that their personal and financial information is safe and protected
+- Fast and reliable shipping: users expect fast and reliable shipping and delivery options, with clear and transparent tracking information. They want to know when their orders will arrive and be able to track them throughout the process
+- Accessibility
 
 ##### Back to [top](#table-of-contents)<hr>
 
