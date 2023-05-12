@@ -1,108 +1,360 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Beauty Bliss Shop
 
-Welcome Kristina Orlichenko,
+![Am I Responsive](docs/Am_I_Responsive.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+**Developer: Kristina Orlichenko**
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+💻 [Visit live website](https://beautybliss.herokuapp.com/) 
+<br>
+💻 [Github Repository](https://github.com/Kristaal/ecommerce-website) 
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Table of Contents
+- [Business Plan](#business-plan)
+    - [Executive Summary](#executive-summary)
+    - [Market Analysis](#market-analysis)
+    - [Marketing and Sales Strategy](#marketing-and-sales-strategy)
+    - [Operations and Management](#operations-and-management)
+    - [Financial Plan](#financial-plan)
+    - [Conclusion](#conclusion)
+- [Marketing](#marketing)
+    - [Mailing List](#mailing-list)
+    - [Social Media](#social-media)
+    - [Blog](#blog)
+    - [Free Delivery](#free-delivery)
+- [User Goals](#user-goals)
+- [Site Owner Goals](#site-owner-goals)
+- [User Experience](#user-experience)
+    - [Target Audience](#target-audience)
+    - [User Requirements and Expectations](#user-requirements-and-expectations)
+- [User Stories](#user-stories)
+    - [Kanban Epics and User Stories](#kanban-epics-user-stories)
+- [Wireframes](#wireframes)
+- [Design](#design)
+    - [Colors](#colors)
+    - [Fonts](#fonts)
+- [Structure](#structure)
+    - [Website pages](#website-pages)
+- [AWS](#aws)
+- [Database](#database)
+- [Models](#models)
+  - [Technologies Used](#technologies-used)
+  - [Features](#features)
+  - [Validation](#validation)
+  - [Testing](#testing)
+    - [Manual testing](#manual-testing)
+    - [Automated testing](#automated-testing)
+    - [Tests on various devices](#tests-on-various-devices)
+    - [Browser compatibility](#browser-compatibility)
+  - [Bugs](#bugs)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+  - [Acknowledgements](#acknowledgements)
 
-`python3 -m http.server`
+  <hr>
 
-A blue button should appear to click: _Make Public_,
+## Business Plan  
+### Executive Summary:
+Beauty Bliss is an online beauty shop that provides a wide range of beauty products to customers worldwide. Our mission is to offer high-quality beauty products at competitive prices while providing excellent customer service. We will achieve this by partnering with leading beauty brands and ensuring that our website is easy to navigate and user-friendly.
 
-Another blue button should appear to click: _Open Browser_.
+Our product range will include skincare, hair care, makeup, and fragrance products. We will offer a diverse range of products that cater to different skin types, hair textures, and personal preferences. Our team consists of experienced beauty professionals who will provide product recommendations and beauty advice to our customers.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Overall, Beauty Bliss aims to become a leading online beauty retailer by offering high-quality products, excellent customer service, and a user-friendly shopping experience.
 
-A blue button should appear to click: _Make Public_,
+### Market Analysis:
+The beauty industry in Ireland is a growing market, driven by a growing population, increasing disposable incomes, and changing consumer preferences. The Irish beauty and personal care market was valued at €1.1 billion in 2019 and is expected to grow at a compound annual growth rate of 4.4% from 2020 to 2025.
 
-Another blue button should appear to click: _Open Browser_.
+The online beauty market in Ireland is also growing, with an increasing number of consumers turning to online shopping due to convenience, accessibility, and wider product options. According to a report by Mintel, 57% of Irish consumers purchased beauty products online in 2020, with skincare being the most popular category.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Beauty Bliss will target Irish consumers looking for high-quality beauty products at competitive prices. Our focus will be on providing a diverse range of products that cater to different skin types, hair textures, and personal preferences. We will also offer a range of international beauty brands that are not widely available in Ireland.
 
-To log into the Heroku toolbelt CLI:
+Overall, Beauty Bliss is well-positioned to capitalize on the growing demand for online beauty products in Ireland. We will leverage our competitive pricing, diverse product range, and excellent customer service to become a leading online beauty retailer in the Irish market.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Marketing and Sales Strategy:
+Our marketing and sales strategy for Beauty Bliss is focused on building brand awareness, driving traffic to our website, and providing a seamless customer experience that encourages repeat purchases. We will leverage online marketing channels and social media platforms such as SEO, PPC advertising, email marketing, Facebook, Instagram, and Twitter to reach our target audience and promote our high-quality and affordable beauty products.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Operations and Management:
+Beauty Bliss will be an online beauty shop, and our operations and management will be primarily focused on website management, product sourcing and inventory management, order fulfillment, customer service, and financial management.
 
-------
+We will leverage an e-commerce platform to manage our website, product listings, and orders. Our team will be responsible for managing our product inventory, ensuring that we have sufficient stock of our best-selling products, and sourcing new products that meet the needs and preferences of our customers.In terms of management, Beauty Bliss will be led by a team of experienced and dedicated individuals with a passion for the beauty industry. Our team will work together to execute our business plan, manage our operations, and provide our customers with the best possible shopping experience.
 
-## Release History
+### Financial Plan:
+The financial plan for Beauty Bliss is based on our projected revenue and expenses for the first three years of operation. Our revenue will come from online sales of beauty products, while our expenses will include the cost of goods sold, marketing expenses, website development and maintenance, and salaries.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Capital: €60,000
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+Revenue: €300,000 in Year 1
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Gross Profit Margin: 40%
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Average Fixed Cost: €30,000 per year
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Average Variable Cost: €12,000 per year
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Net Profit: €48,000 in Year 1
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+We will reinvest our profits back into the business to fund our growth and expansion plans.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Overall, our financial plan is based on realistic revenue and expense projections that are in line with industry averages and our expected growth rate. We will closely monitor our financial performance and adjust our strategies as needed to ensure the long-term success of Beauty Bliss.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Conclusion:
+Beauty Bliss is a promising online beauty shop that is poised for success in the Irish market. Our market analysis indicates that there is a growing demand for high-quality and affordable beauty products in Ireland, and we are well-positioned to meet this demand through our online platform.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+We have developed a solid business plan that outlines our mission, goals, and strategies for achieving success. Our marketing and sales strategies are focused on building brand awareness, driving traffic to our website, and providing a seamless customer experience that encourages repeat purchases.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+Our financial plan is based on realistic revenue and expense projections, and we will reinvest our profits back into the business to fund our growth and expansion plans. We will closely monitor our financial performance and adjust our strategies as needed to ensure the long-term success of Beauty Bliss.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+In conclusion, we are excited about the potential of Beauty Bliss and look forward to serving the needs of the Irish market. We are committed to providing our customers with the highest quality beauty products, excellent customer service, and a convenient online shopping experience. With our dedicated team and strong business plan, we are confident that Beauty Bliss will become a leading online beauty shop in Ireland.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+##### Back to [top](#table-of-contents)<hr>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Marketing  
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Mailing List  
 
-------
+Beauty Bliss uses Mailchimp to manage its mailing list. By joining the mailing list, users will receive updates on new features, upcoming events, and exclusive promotions. The process to join the mailing list is simple, users just need to provide their email address on the website, and they will start receiving email updates. 
 
-## FAQ about the uptime script
+<details><summary>See Image</summary>
 
-**Why have you added this script?**
+![Mailchimp](docs/mailchimp.png)  
+</details> 
+<br>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Social Media  
 
-**How will this affect me?**
+The website Beauty Bliss has a presence on Facebook. The Facebook page serves as a platform to promote upcoming events, post updates on the latest features, and share user-generated content. This social media account allow users to stay informed.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+[Facebook]()  
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Blog
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Beauty Bliss provides a blog that will increase audience, attract buyers and increase sales.
 
-**So….?**
+<details><summary>See Image</summary>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Blog](docs/features/blog.png)  
+</details> 
+<br>
 
-**Can I opt out?**
+### Free Delivery
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+We will offer free delivery on all orders above a certain threshold to incentivize customers to make a purchase. This will help us increase our average order value and encourage repeat purchases.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+<details><summary>See Image</summary>
 
-**Anything more?**
+![Free delivery](docs/features/free_delivery.png)  
+</details> 
+<br>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+##### Back to [top](#table-of-contents)<hr>
 
----
+## User Goals
 
-Happy coding!
+## Site Owner Goals
+
+<hr>
+
+## User Experience
+
+### Target Audience
+
+### User Requirements and Expectations
+
+##### Back to [top](#table-of-contents)<hr>
+
+## User Stories
+
+### Kanban, Epics & User Stories
+
+<details><summary>Epic Overview</summary>
+
+
+![Epics]()
+</details>
+
+<details><summary>Epic 1</summary>
+
+![Epic 1]()
+</details>
+
+<details><summary>Epic 2</summary>
+
+![Epic 2]()
+</details>
+
+<details><summary>Epic 3</summary>
+
+![Epic 3]()
+</details>
+
+<details><summary>Epic 4</summary>
+
+![Epic 4]()
+</details>
+
+<details><summary>User Stories</summary>
+
+![User stories]()
+![User stories]()
+![User stories]()
+
+</details>
+
+<details><summary>Kanban</summary>
+
+![Kanban Start]()
+![Kanban Middle]()
+![Kanban End]()
+
+</details>
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Wireframes
+
+<hr>
+
+## Design
+
+### Colors
+
+<details><summary>See Color Palette</summary>
+
+![Color Palette]()
+</details>
+
+### Fonts
+
+<details><summary>See Font Image</summary>
+
+![Font Image]()
+</details>
+<hr>
+
+# Structure
+
+## Website pages
+
+##### Back to [top](#table-of-contents)<hr>
+
+## AWS 
+
+<details><summary>See AWS Images</summary>
+
+![aws bucket]()
+![aws media]()
+![aws static]()
+</details>
+<hr>
+
+## Database
+
+<details><summary>See Database Image</summary>
+<img src="">
+</details>
+<hr>
+
+## Models  
+
+### User Model
+
+| Key        | Name         | Type        |
+| ---------- | ------------ | ----------- |
+|  |      |    |
+
+### User Profile Model
+
+| Key        | Name         | Type        |
+| ---------- | ------------ | ----------- |
+|  |      |    |
+
+##### Back to [top](#table-of-contents)
+<hr>
+
+
+## Technologies Used
+
+### Languages & Frameworks
+
+### Libraries & Tools
+
+##### Back to [top](#table-of-contents)
+
+## Features  
+
+### Search Engine Optimisation (SEO)
+
+<details><summary>See feature image</summary>
+
+![SEO]()
+</details>  
+
+### Home page
+
+<details><summary>See feature images</summary>
+
+![Home page]()
+</details>  
+
+##### Back to [top](#table-of-contents)<hr>
+
+# Validation  
+
+## HTML Validation
+
+##### Back to [top](#table-of-contents)<hr> 
+
+### CSS Validation
+
+##### Back to [top](#table-of-contents)<hr> 
+
+### JavaScript Validation
+
+##### Back to [top](#table-of-contents)<hr>  
+
+## PEP8 Validation
+
+##### Back to [top](#table-of-contents)<hr>  
+
+## Accessibility  
+
+##### Back to [top](#table-of-contents)<hr>  
+
+## Lighthouse
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Testing
+
+1. Manual testing User Stories
+2. Automated testing
+
+### Manual testing
+
+### Automated testing
+
+### Coverage  
+
+### Device Testing & Browser compatibility
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Bugs
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Deployment  
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Credits
+
+### Code
+
+### Media
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Acknowledgements
+
+### Special thanks to the following:
