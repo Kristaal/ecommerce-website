@@ -13,6 +13,17 @@ body {
     margin:0;
 }
 
+.logout-container {
+    padding: 100px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.signup-section {
+    margin-top: 90px;
+    text-align: center;
+}
+
 .main-container {
     padding: 0;
 }
