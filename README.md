@@ -193,48 +193,88 @@ A sitemap.xml file This file was added to help speed up content discovery for se
 ##### Back to [top](#table-of-contents)<hr>
 
 ## User Stories
+1. As a first time user I can see a website description so that should help me understand what the site is about
+2. As a user I can navigate across the site so that can move to each feature of the site easily
+3. As a shopper I can use a search on the website so that I can find specific product I would like to purchase
+4. As a user I can look at footer so that I can see contact information, social links and website info
+5. As a user I can easily register for an account so that I can have a personal account and be able to view my profile
+6. As a user I can login and logout so that I can access my personal account information
+7. As an shopper I can receive an email confirmation after registering so that I can verify that my account registration was successful
+8. As a user I can have a profile so that I can store my information for faster checkouts
+9. As a shopper I can view products so that I can choose something to buy
+10. As a shopper  I can sort the list of available products so that I can identify the best rated, best priced and categorically sorted products
+11. As a shopper  I can view individual product details so that I can identify the price, description, rating and view reviews
+12. As an owner I can add new products to the store so that we can sell more items to our customers
+13. As an owner I can remove items from the store so that customers no longer see items I do not intend to sell again
+14. As an owner I can edit products so that products have the correct information and/or pricing
+15. As a shopper  I can add products to bag so that I can review my items before I buy them
+16. As a shopper I can remove items from my cart so that I can start my shopping again or decide against placing an order
+17. As a shopper I can add to wishlist some products so that I can come back to wish list and buy interested products
+18. As a shopper I can be interested in previous shopper experience so that I can choose a product according to the best reviews
+19. As a shopper I can leave my own review on each product so that I can rate the product and write about its advantages or disadvantages
+20. As a shopper I can easily enter my payment information so that I can check out quickly and with no hassles
+21. As a shopper I can pay for product so that I can complete the payment through secure checkout
+22. As a shopper I can see my orders so that I can track the progress of all my orders
+23. As a shopper I can look at blog so that it provides me regular updates through published posts
+24. As a shopper I can contact the business so that I can communicate with a person
+25. As a user I can find the store's social networks so that see all the information and updates
+26. As a shopper I can sign up for a newsletter so that I can get access to special offers or promotions
+27. As a shopper I can quickly identify deals clearance items and special offers so that I can take advantage of special saving on products I'd like to purchase
+28. As a shopper I can easily view the total of my purchases at any time so that avoid spending too much
+29. As a user I can see my order history so that I always know what product I bought and have access to order the product again if I liked it
+30. As a user I can receive am email from shop where I ordered items so that I always confirm my purchase and know what I ordered
+
 
 ### Kanban, Epics & User Stories
 
+- GitHub Kanban was used to track all open user stories
+- Epics were created using the milestones feature
+- Backlog, In Progress, Done headings were used in the kanban
+
 <details><summary>Epic Overview</summary>
 
-
-![Epics]()
+![Epics](docs/agile/epic_overview.png)
 </details>
 
 <details><summary>Epic 1</summary>
 
-![Epic 1]()
+![Epic 1](docs/agile/epic_1.png)
 </details>
 
 <details><summary>Epic 2</summary>
 
-![Epic 2]()
+![Epic 2](docs/agile/epic_2.png)
 </details>
 
 <details><summary>Epic 3</summary>
 
-![Epic 3]()
+![Epic 3](docs/agile/epic_3.png)
 </details>
 
 <details><summary>Epic 4</summary>
 
-![Epic 4]()
+![Epic 4](docs/agile/epic_4.png)
+</details>
+
+<details><summary>Epic 5</summary>
+
+![Epic 4](docs/agile/epic_5.png)
+</details>
+
+<details><summary>Epic 6</summary>
+
+![Epic 4](docs/agile/epic_6.png)
 </details>
 
 <details><summary>User Stories</summary>
 
-![User stories]()
-![User stories]()
-![User stories]()
+![User stories](docs/agile/user_stories.png)
 
 </details>
 
 <details><summary>Kanban</summary>
 
-![Kanban Start]()
-![Kanban Middle]()
-![Kanban End]()
+![Kanban End](docs/agile/kanban.png)
 
 </details>
 
