@@ -9,6 +9,7 @@ from profiles.models import UserProfile
 
 import json
 import time
+import stripe
 
 
 class StripeWH_Handler:
@@ -26,13 +27,13 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )        
+        )
 
     def handle_event(self, event):
         """
@@ -51,7 +52,6 @@ class StripeWH_Handler:
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
 
-        # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(
             intent.latest_charge
         )
