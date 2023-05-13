@@ -27,9 +27,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+development = os.environ.get('DEVELOPMENT', False)
 
-ALLOWED_HOSTS = ['beautybliss.herokuapp.com', 'localhost']
+DEBUG = True
+
+if development:
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000']
+else:
+    ALLOWED_HOSTS = ['beautybliss.herokuapp.com', '*']
 
 
 # Application definition
