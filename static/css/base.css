@@ -13,7 +13,6 @@ body {
     background: url('/media/main.JPG') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
     font-family: 'Lato';
 }
 
@@ -131,12 +130,6 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: white;
-    color: black;
-    min-width: 200px;
-}
-
 .btn-black {
     background: black;
     color: white;
@@ -206,7 +199,6 @@ a.category-badge > span.badge:hover {
 .toast-capper {
     height: 2px;
 }
-
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
@@ -383,27 +375,27 @@ input[name='q']::placeholder {
 
 .fa-star {
     color: darkgoldenrod;
-  }
+}
   
-  .fa-heart {
+.fa-heart {
     color: grey;
-  }
+}
   
-  .fa-heart:hover {
+.fa-heart:hover {
     color: red;
-  }
+}
   
-  .in-wishlist {
+.in-wishlist {
     color: red;
-  }
+}
   
-  .in-wishlist:hover {
+.in-wishlist:hover {
     color: grey;
-  }
+}
   
-  a:hover {
+a:hover {
     cursor: pointer;
-   }
+}
 
 /* buttons */
 .button-62 {
@@ -456,17 +448,129 @@ input[name='q']::placeholder {
     white-space: nowrap;
   }
   
-  .button-60:not([disabled]):focus {
+.button-60:not([disabled]):focus {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-  }
+}
   
-  .button-60:not([disabled]):hover {
+.button-60:not([disabled]):hover {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-  }
+}
 
+/* product card */
 
+.product-grid{
+    text-align: center;
+}
 
+.product-grid .product-content{
+    min-height: 150px;
+}
 
+.product-grid .product-image{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.product-grid .product-image a.image{display: block; }
+
+.product-grid .product-image img{
+    width: 100%;
+    height: auto;
+}
+
+.product-grid .product-discount-label{
+    color: #fff;
+    background: #FFABAB;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 0 20px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.product-grid .product-links{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    transition: all .5s ease 0s;
+}
+
+.product-grid:hover .product-links{ right: 10px;}
+
+.product-grid .product-links li a{
+    color: #333;
+    background: transparent;
+    font-size: 17px;
+    line-height: 38px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-bottom: none;
+    display: block;
+    transition: all 0.3s;
+}
+
+.product-grid .product-links li:last-child a{ border-bottom: 1px solid #333;}
+
+.product-grid .product-links li a:hover{
+    color: #fff;
+    background: #333;
+}
+
+.product-grid .add-to-cart{
+    background: #FFABAB;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px 26px;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    transition: all 0.3s ease 0s;
+}
+.product-grid:hover .add-to-cart{ bottom: 0; }
+
+.product-grid .add-to-cart:hover{ text-shadow: 4px 4px rgba(0,0,0,0.2); }
+
+.product-grid .product-content{
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.1) inset;
+}
+
+.product-grid .title{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 7px;
+}
+
+.product-grid .title a{
+    color: #777;
+    transition: all 0.3s ease 0s;
+}
+
+.product-grid .title a:hover{ color: #FFABAB;}
+
+.product-grid .price{
+    color: #0d0d0d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.product-grid .price span{
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
 
 /* -------------------------------- Media Queries */
 
@@ -477,138 +581,34 @@ input[name='q']::placeholder {
     }
   }
   
-  /* fixed top navbar only on medium and up */
-  @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
-      }
-  
-      .header-container {
-          padding-top: 164px;
-      }
-  }
-  
-  /* pad the top a bit when navbar is collapsed on mobile */
-  @media (max-width: 991px) {
-      .header-container {
-          padding-top: 116px;
-      }
-  
-      body {
-          height: calc(100vh - 116px);
-      }
-  }
-
-
-
-    .product-grid{
-        
-        text-align: center;
-    }
-    .product-grid .product-content{
-        min-height: 150px;
-    }
-    .product-grid .product-image{
-        overflow: hidden;
-        position: relative;
-        z-index: 1;
-    }
-    .product-grid .product-image a.image{display: block; }
-    .product-grid .product-image img{
-        width: 100%;
-        height: auto;
-    }
-    .product-grid .product-discount-label{
-        color: #fff;
-        background: #FFABAB;
-        font-size: 13px;
-        font-weight: 600;
-        line-height: 25px;
-        padding: 0 20px;
-        position: absolute;
-        top: 10px;
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
         left: 0;
+        z-index: 1030;
     }
-    .product-grid .product-links{
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        position: absolute;
-        top: 10px;
-        right: -50px;
-        transition: all .5s ease 0s;
+  
+    .header-container {
+        padding-top: 164px;
     }
-    .product-grid:hover .product-links{ right: 10px; }
-    .product-grid .product-links li a{
-        color: #333;
-        background: transparent;
-        font-size: 17px;
-        line-height: 38px;
-        width: 38px;
-        height: 38px;
-        border: none;
-        border-bottom: none;
-        display: block;
-        transition: all 0.3s;
+}
+  
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
     }
-    .product-grid .product-links li:last-child a{ border-bottom: 1px solid #333; }
-    .product-grid .product-links li a:hover{
-        color: #fff;
-        background: #333;
+    body {
+        height: calc(100vh - 116px);
     }
-    .product-grid .add-to-cart{
-        background: #FFABAB;
-        color: #fff;
-        font-size: 16px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        width: 100%;
-        padding: 10px 26px;
-        position: absolute;
-        left: 0;
-        bottom: -60px;
-        transition: all 0.3s ease 0s;
-    }
-    .product-grid:hover .add-to-cart{ bottom: 0; }
-    .product-grid .add-to-cart:hover{ text-shadow: 4px 4px rgba(0,0,0,0.2); }
-    .product-grid .product-content{
-        background: #fff;
-        padding: 15px;
-        box-shadow: 0 0 0 5px rgba(0,0,0,0.1) inset;
-    }
-    .product-grid .title{
-        font-size: 16px;
-        font-weight: 600;
-        text-transform: capitalize;
-        margin: 0 0 7px;
-    }
-    .product-grid .title a{
-        color: #777;
-        transition: all 0.3s ease 0s;
-    }
-    .product-grid .title a:hover{ color: #FFABAB; }
-    .product-grid .price{
-        color: #0d0d0d;
-        font-size: 14px;
-        font-weight: 600;
-    }
-    .product-grid .price span{
-        color: #888;
-        font-size: 13px;
-        font-weight: 400;
-        text-decoration: line-through;
-    }
+}
 
-
-    @media screen and (max-width: 990px){
-        .product-grid{ margin-bottom: 30px; }
-    }
-
-
+@media screen and (max-width: 990px){
+    .product-grid{ margin-bottom: 30px; }
+}
 
 @media screen and (min-width: 821px){
     .main-img {
@@ -627,12 +627,6 @@ input[name='q']::placeholder {
         padding-top: 30px;
         background-color: #0000004b;
     }
-    .button-62{
-        
-        width: 200px;
-        padding: 5px;
-        margin-left: 40px;
-    }
     .text-banner{
         font-weight: 500;
         text-align: center;
@@ -644,4 +638,3 @@ input[name='q']::placeholder {
         display: none;
     }
 }
-
