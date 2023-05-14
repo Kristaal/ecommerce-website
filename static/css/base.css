@@ -10,7 +10,7 @@ body {
 }
 
 .main-img {
-    background: url('/media/BARE Gifts PLP.jpeg') no-repeat center center fixed;
+    background: url('/media/main.JPG') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
