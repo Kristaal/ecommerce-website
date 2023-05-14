@@ -124,9 +124,9 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
+    background: white;
+    color: black;
+    min-width: 200px;
 }
 
 .btn-black {
@@ -134,14 +134,11 @@ body {
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: white;
+    color:black;
 }
 
 .text-black {
@@ -401,7 +398,7 @@ input[name='q']::placeholder {
    }
 
 /* buttons */
-.button-62, .shop-now-button {
+.button-62 {
   background: linear-gradient(to bottom right, #D14D72, #ffcdab);
   border: 0;
   border-radius: 12px;
@@ -602,3 +599,124 @@ input[name='q']::placeholder {
     @media screen and (max-width: 990px){
         .product-grid{ margin-bottom: 30px; }
     }
+
+@media screen and (min-width: 1024px){
+    .carousel-caption {
+        padding: 0;
+    }
+    .second-nav {
+        padding-right: 40px;
+    }
+    
+}
+
+@media screen and (min-width: 1280px){
+    .carousel-caption {
+        padding: 30px;
+    }
+    .main-img{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .carousel-caption {
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+    .main-img{
+        display: none;
+    }
+    
+}
+
+
+.main-img {
+    background: url('/media/BARE Gifts PLP.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Lato';
+}
+
+@media screen and (min-width: 912px){
+    .main-img{
+        display: none;
+    }
+    .text-banner {
+        padding-top: 50px;
+    }
+    .text-heading {
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px){
+    .main-img{
+        display: none;
+    }
+    .text-banner {
+        padding-top: 50px;
+    }
+    .text-heading {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 540px){
+    .mailchimp {
+        padding-left: 60px;
+    }
+    #carouselExampleIndicators{
+        display: none;
+    }
+    .text-main{
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+    .navbar {
+        margin: 0;
+        padding-right: 60px;
+        
+    }
+}
+
+@media screen and (max-width: 412px){
+    .mailchimp {
+        padding-left: 40px;
+    }
+    #carouselExampleIndicators{
+        display: none;
+    }
+    .text-main{
+        padding-top: 40px;
+        background-color: #d14d7260;
+    }
+}
+
+
+@media screen and (max-width: 280px){
+    .text-main{
+        padding-top: 60px;
+        background-color: #d14d7260;
+    }
+    .text-main h1{
+        font-size: 2.5rem;
+    }
+    .shop-now-button {
+        min-width: 100px;
+    }
+    .mailchimp {
+        padding: 0;
+        margin: 0;
+    }
+    .navbar {
+        margin: 0;
+        padding-right: 30px;
+        padding-left: 10px;
+    }
+}
+
