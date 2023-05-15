@@ -591,7 +591,7 @@ I used meta keywords that make it possible for people to find my site via search
 ### Logo
 
 - A custom logo for the business included only letters.
-- User stories covered: 
+- User stories covered: 1
 
 <details><summary>See feature images</summary>
 
@@ -601,7 +601,7 @@ I used meta keywords that make it possible for people to find my site via search
 ### Home page
 
 - Home page includes navbar, main website slider with images, main text, button "Shop now" and a footer with website information.
-- User stories covered: 
+- User stories covered: 1, 2, 3, 4
 
 <details><summary>See feature images</summary>
 
@@ -615,7 +615,7 @@ I used meta keywords that make it possible for people to find my site via search
   - Fully Responsive.
   - On small screens switches to hamburger menu.
   - Displayed on all pages
-  - User stories covered:
+  - User stories covered: 2, 28
 
 <details><summary>See feature images</summary>
 
@@ -625,7 +625,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 ### Search
 - Allows the user to search for products.  
-- User stories covered: 
+- User stories covered: 2, 3, 27
 
 <details><summary>See feature image</summary>
 
@@ -636,7 +636,7 @@ I used meta keywords that make it possible for people to find my site via search
 ### Footer
 - Contains social media links, links, privacy policy, contacts and newsletter, 
 - displayed across all pages.  
-- User stories covered: 
+- User stories covered: 1, 2, 4, 25
 
 <details><summary>See feature images</summary>
 
@@ -645,7 +645,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 ### Mailing List Sign Up
 - Mailchimp signup for email mailing list. 
-- User stories covered:  
+- User stories covered: 26
 
 <details><summary>See feature images</summary>
 
@@ -656,7 +656,7 @@ I used meta keywords that make it possible for people to find my site via search
 - A link is used for the Facebook business page.
 - All links open in a new tab to ensure the user is not directed away from the business.
 - noopener, noreferrer, nofollow used to communicate with web crawlers and for security and privacy concerns.  
-- User stories covered: 
+- User stories covered: 25
   
 <details><summary>See feature image</summary>
 
@@ -666,7 +666,7 @@ I used meta keywords that make it possible for people to find my site via search
 ### Products  page
   - Products list page contains all products cards, buttons to sort by categories.
   - User allowed to add each product to bag or put it in wish list.
-  - User stories covered: 
+  - User stories covered: 9, 10, 15, 17
 
 <details><summary>See feature images</summary>
 
@@ -676,7 +676,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 ### Sorting field
 - Allows the user to sort the listed products.  
-- User stories covered: 
+- User stories covered: 10, 27
 
 <details><summary>See feature images</summary>
 
@@ -687,7 +687,7 @@ I used meta keywords that make it possible for people to find my site via search
   - Products details page contains product image, description, quantity input, add to bag button.
   - Page provides add to wish list button.
   - User allowed to add product to wish list or remove accordingly.
-  - User stories covered: 
+  - User stories covered: 11, 16
 
 <details><summary>See feature images</summary>
 
@@ -696,7 +696,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 ### Add to wishlist
   - Allows the User to add products to the wishlist
-  - User stories covered: 
+  - User stories covered: 17
 
 <details><summary>See feature images</summary>
 
@@ -706,7 +706,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 ### Reviews
 - Only registered users can leave a reviews on product
-- User stories covered: 
+- User stories covered: 18, 19
   
 <details><summary>See feature images</summary>
 
@@ -715,7 +715,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 ### Add Product
   - Allows the Admin to add new products.
-  - User stories covered: 
+  - User stories covered: 12
 
 <details><summary>See feature images</summary>
 
@@ -725,7 +725,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 ### Edit Product
   - Allows the Admin to edit the products.
-  - User stories covered: 
+  - User stories covered: 14
 
 <details><summary>See feature images</summary>
 
@@ -734,8 +734,8 @@ I used meta keywords that make it possible for people to find my site via search
 </details>
 
 ### Delete Product
-  - Allows the Admin to delete products, includes confirmation message before deletion.
-  - User stories covered: 
+  - Allows the Admin to delete products
+  - User stories covered: 13
 
 <details><summary>See feature images</summary>
 
@@ -747,7 +747,7 @@ I used meta keywords that make it possible for people to find my site via search
   - Contains all products which user selected to buy
   - User can change item quantity
   - User can go to secure checkout page by click on button
-  - User stories covered: 
+  - User stories covered: 15, 28, 16
 
 <details><summary>See feature images</summary>
 
@@ -756,7 +756,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 ### Checkout
   - Allows the user to purchase items in their bag.
-  - User stories covered: 
+  - User stories covered: 20, 21
 
 <details><summary>See feature images</summary>
 
@@ -765,7 +765,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 ### Stripe
   - Allows the user to use stripe for card payments.
-  - User stories covered: 
+  - User stories covered: 20, 21
 
 <details><summary>See feature images</summary>
 
@@ -774,7 +774,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 ### Email Confirmation
   - Allows the user to receive an email confirmation for their order.
-  - User stories covered: 
+  - User stories covered: 30
 
 <details><summary>See feature images</summary>
 
@@ -785,7 +785,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 ### Checkout success
   - Shows the page confirmation with user order.
-  - User stories covered: 
+  - User stories covered: 30
 
 <details><summary>See feature images</summary>
 
@@ -796,7 +796,7 @@ I used meta keywords that make it possible for people to find my site via search
 
   - Blog page contains posts cards with images and post title on each card.
   - Blog page includes pagination for 6 posts on the page
-  - User stories covered: 
+  - User stories covered: 23
 
 <details><summary>See feature images</summary>
 
@@ -815,7 +815,7 @@ I used meta keywords that make it possible for people to find my site via search
 ### Post details page
 
   - Post details page provides post content.
-  - User stories covered: 
+  - User stories covered: 23
 
 <details><summary>See feature images</summary>
 
@@ -826,7 +826,7 @@ I used meta keywords that make it possible for people to find my site via search
 
   - Contact page contains message form, contact information and google map with mark on it for the business.
   - Only loged in users can send a message to website owner.
-  - User stories covered: 
+  - User stories covered: 24
 
 <details><summary>See feature images</summary>
 
@@ -836,7 +836,7 @@ I used meta keywords that make it possible for people to find my site via search
 ### Map
 
   - Contact page contains map with address of the business.
-  - User stories covered: 
+  - User stories covered: 24
 
 <details><summary>See feature images</summary>
 
@@ -848,7 +848,7 @@ I used meta keywords that make it possible for people to find my site via search
   - Allows user to add favourite items to wished list
   - User can delete item from wish list or add it to bag
   - Wishlist works on all products page and in product details
-  - User stories covered: 
+  - User stories covered: 17
 
 <details><summary>See feature images</summary>
 
@@ -859,7 +859,7 @@ I used meta keywords that make it possible for people to find my site via search
 ### Profile 
 
   - Allows the user to update their information and see their order history.
-  - User stories covered: 
+  - User stories covered: 8, 22, 29
 
 <details><summary>See feature images</summary>
 
@@ -867,19 +867,10 @@ I used meta keywords that make it possible for people to find my site via search
 ![Profile-2](docs/features/profile1.png)
 </details>
 
-### Notifications container
-  - Allows the user to see relevant notifications.
-  - User stories covered: 
-
-<details><summary>See feature images</summary>
-
-![Email confirm](docs/features/notification.png)
-</details>
-
 ### Sign up / Register
 
 - Allow users to register an acoount.
-- User stories covered: 
+- User stories covered: 5, 7
 
 <details><summary>See feature image</summary>
 
@@ -889,7 +880,7 @@ I used meta keywords that make it possible for people to find my site via search
 ### Sign In
 
 - User can sign in.  
-- User stories covered: 
+- User stories covered: 6
 
 <details><summary>See feature images</summary>
 
@@ -900,7 +891,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 - Allows the user to securely sign out.
 - Ask user if they are sure they want to sign out.  
-- User stories covered: 
+- User stories covered: 6
 
 <details><summary>See feature image</summary>
 
@@ -1926,10 +1917,259 @@ The site uses to test on various real world devices. The following devices were 
 | ------- | ------- |
 | 404 page doesn't shown in deploy version  | Set correct Debug settings |
 
-
 ##### Back to [top](#table-of-contents)<hr>
 
 ## Deployment  
+
+
+### Heroku  
+
+[Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
+
+This application has been deployed from Github using Heroku. Here's how:
+
+1. Create an account at heroku.com
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/heroku-1-1.png">
+
+</details>
+
+2. Create an app, give it a name and select a region
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/heroku-2-1.png">
+<img src="docs/deployment/heroku-2-2.png">
+
+</details>
+
+3. Go to app settings and set DATABASE_URL to config vars
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/heroku-3-1.png">
+
+</details>
+
+4. Install the plugins dj-database-url and psycopg2-binary in terminal.
+
+5. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/heroku-5-1.png">
+
+</details>
+
+6. Create a Procfile with the text: web: gunicorn your_app_name.wsgi
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/heroku-6-1.png">
+
+</details>
+
+7. Ensure debug is set to false in the settings.py file, add localhost, and ci-pp4-the-diplomat.herokuapp.com to the ALLOWED_HOSTS variable in settings.py
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/heroku-7-1.png">
+
+</details>
+
+8. In the settings.py ensure the connection is to the Heroku postgres database, no indentation if you are not using a seperate test database. 
+<details><summary>See Images</summary>
+<img src="docs/deployment/heroku-8-1.png">
+
+</details>
+
+9.  Run "python3 manage.py showmigrations" to check the status of the migrations
+
+10. Run "python3 manage.py migrate" to migrate the database
+
+11. Run "python3 manage.py createsuperuser" to create a super/admin user
+
+12. Run "python3 manage.py loaddata genres.json" on the categories file in products/fixtures to create the genres
+
+13. Run "python3 manage.py loaddata albums.json" on the products file in products/fixtures to create the albums
+
+14. Run "python3 manage.py loaddata tracks.json" on the products file in products/fixtures to create the tracks
+
+15. Install gunicorn (pip install gunicorn) and add it to the requirements.txt file using the command pip3 freeze > requirements.txt
+
+16. Disable collectstatic in Heroku before any code is pushed using the heroku settings config vars: set DISABLE_COLLECTSTATIC: 1
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/heroku-12-1.png">
+
+</details>
+
+17.  Ensure the following environment variables are set in Heroku
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/heroku-17.png">
+
+</details>
+
+18.  Connect the app to GitHub, and enable automatic deploys from main if you wish
+
+<details>
+<img src="docs/deployment/heroku-18.png">
+<img src="docs/deployment/heroku-18-1.png">
+
+</details>
+
+19.  Click deploy to deploy your application to Heroku for the first time
+
+20.  Click on the link provided to access the application
+
+21.  If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
+
+### Stripe Endpoint
+
+1. Register for a Stripe account at stripe.com
+2. Log into your Stripe account and navigate to the Developers section  
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/stripe-1.png">
+
+</details>  
+
+3. In the Developers section, locate the API keys section and take note of the publishable and secret keys  
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/stripe-2.png">
+
+</details> 
+
+4. Create environment variables in your local environment and on Heroku, such as STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY, with the values of the publishable and secret keys  
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/stripe-4.png">
+
+</details>
+
+5. Return to the Developers section of your Stripe account and click on the Webhooks tab  
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/stripe-5.png">
+
+</details> 
+
+6. Create a webhook with the URL of your website, such as https://example.com/checkout/wh/  
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/stripe-6-1.png">
+
+</details> 
+
+7. Choose the events you want to receive, such as payment_intent.payment_failed and payment_intent.succeeded and click add endpoint  
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/stripe-6-2.png">
+<img src="docs/deployment/stripe-6-3.png">
+
+</details> 
+
+8. Take note of the key generated for this webhook  
+
+9. Create an environment variable, such as STRIPE_WH_SECRET, with the value of the webhook secret key on your local environment and Heroku  
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/stripe-9.png">
+
+</details>
+
+10. Test the webhook to ensure it is working properly and troubleshoot any issues that may arise.  
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/stripe-7.png">
+
+</details>
+
+### AWS S3 Bucket Setup  
+
+To set up an AWS S3 bucket:
+
+1. Sign in to the AWS Management Console and open the Amazon S3 console.  
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/aws-1.png">
+
+</details>
+
+2. Click on the "Create Bucket" button.  
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/aws-2.png">
+
+</details>
+
+3. Enter a unique name for your bucket, and select the region where you want the bucket to be located.
+Configure any additional options, such as versioning, object-level logging, and object tagging, as needed.
+Click on the "Create" button to create the bucket.
+<details><summary>See Images</summary>
+<img src="docs/deployment/aws-3-1.png">
+<img src="docs/deployment/aws-3-2.png">
+
+</details>
+
+4. Set up the Static website hosting property
+<details><summary>See Images</summary>
+<img src="docs/deployment/aws-4-1.png">
+<img src="docs/deployment/aws-4-2.png">
+
+</details>
+
+5. Set up the Cross-origin resource sharing (CORS) section and Bucket policy in permissions 
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/aws-5-1.png">
+<img src="docs/deployment/aws-5-2.png">
+<img src="docs/deployment/aws-5-3.png">
+
+</details>
+
+6. Go to Identify and Access Management (IAM)
+
+6. Create Group
+
+7. Create User
+
+8. Upload your user SECRET_ACCESS_KEY and ACCESS_KEY_ID
+
+9. Set enviroment variables in heroku settings and delete DISABLE_COLLECTSTATIC var
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/aws-9-1.png">
+
+</details>
+
+10. Set settings for aws in your app settings:
+
+<details><summary>See Images</summary>
+<img src="docs/deployment/aws-10.png">
+
+</details>
+
+11. Upload files to the bucket using the AWS S3 console, the AWS S3 CLI, or the AWS S3 SDK.
+ 
+<details><summary>See Images</summary>
+<img src="docs/deployment/aws-11.png">
+
+</details>
+
+### Fork Repository
+To fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+<hr>
+
+### Clone Repository
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7.Press Enter to create your local clone.
 
 ##### Back to [top](#table-of-contents)<hr>
 
@@ -1937,10 +2177,26 @@ The site uses to test on various real world devices. The following devices were 
 
 ### Code
 
+- Code Institute for the search and sorting functionality, bag and checkout app as a basis for my checkout and bag apps
+- Code Institute Tutor support for guidance on my bug fixes.
+- [Official Django Documentation](https://docs.djangoproject.com/en/4.1/ref/) - for code expressions and code functionalities.
+- [Stack Overflow](https://stackoverflow.com/) - for research into code functionalities and problem solving.
+- [Bestjquery](https://bestjquery.com/tutorial/product-grid/demo199/) - for product cards
+
 ### Media
+
+- [Pexels](https://www.pexels.com/) 
+- [Makeup.ua](https://makeup.com.ua/ua/) 
+- [VS](https://staging-ap01-majorbrands.demandware.net/s/VictoriasSecret/home) 
 
 ##### Back to [top](#table-of-contents)<hr>
 
 ## Acknowledgements
 
 ### Special thanks to the following:
+
+- My Mentor Spencer Barriball for his excellent guidance and valuable advices in development process 
+- Code Institute Tutor Support
+- My friends and colleagues with whom I study on the course
+
+##### Back to [top](#table-of-contents)<hr>
