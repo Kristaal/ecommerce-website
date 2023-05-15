@@ -1869,6 +1869,64 @@ The site uses to test on various real world devices. The following devices were 
 
 ##### Back to [top](#table-of-contents)<hr>
 
+## Bugs
+
+| **Bug** | **Fix** |
+| ------- | ------- |
+| Input quantity field can be submitted empty that causes an error  | Write Javascript function and views to set proper quantity after wrong input  |
+
+<details><summary>See Images</summary>
+<img src="docs/bugs/bug-1.png">
+</details>
+
+<br>
+
+| **Bug** | **Fix** |
+| ------- | ------- |
+| Stripe webhook doesn't respond to the request  | Set proper webhook path and check webhook handler |
+
+<details><summary>See Images</summary>
+<img src="docs/bugs/bug-2.png">
+<img src="docs/bugs/bug-2-1.png">
+</details>
+
+<br>
+
+| **Bug** | **Fix** |
+| ------- | ------- |
+| Stripe webhook doesn't respond to the request  | Set billing details in webhook handler and install stripe |
+
+<details><summary>See Images</summary>
+<img src="docs/bugs/bug-3.png">
+</details>
+
+<br>
+
+| **Bug** | **Fix** |
+| ------- | ------- |
+| Button "Add to wishlist" send errors | Add product.id user.id to the products.html  |
+
+<details><summary>See Images</summary>
+<img src="docs/bugs/bug-4.png">
+</details>
+
+<br>
+
+| **Bug** | **Fix** |
+| ------- | ------- |
+| After deployment webpage didnt show main images | Change src to the img and add "{{ MEDIA_URL }}"|
+
+<details><summary>See Images</summary>
+<img src="docs/bugs/bug-5.png">
+</details>
+
+<br>
+
+| **Bug** | **Fix** |
+| ------- | ------- |
+| 404 page doesn't shown in deploy version  | Set correct Debug settings |
+
+
 ##### Back to [top](#table-of-contents)<hr>
 
 ## Deployment  
