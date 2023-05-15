@@ -919,105 +919,105 @@ The [W3C Markup Validation Service](https://validator.w3.org/) was used to valid
 
 <details><summary>Home page</summary>
 
-![Home html](docs/validation/validation_home_page.jpg)
+![Home html](docs/validation/html/validation_home_page.jpg)
 </details>
 
 ### Products page
 
 <details><summary>Products page</summary>
 
-![Products html](docs/validation/validation_products_page.png)
+![Products html](docs/validation/html/validation_products_page.png)
 </details>
 
 ### Product details page
 
 <details><summary>Product details page</summary>
 
-![Product detail html](docs/validation/vaidation_product_details_page.jpg)
+![Product detail html](docs/validation/html/vaidation_product_details_page.jpg)
 </details>
 
 ### Add product page
 
 <details><summary>Add product page</summary>
 
-![Add product html](docs/validation/validation_add_products_page.jpg)
+![Add product html](docs/validation/html/validation_add_products_page.jpg)
 </details>
 
 ### Edit product page
 
 <details><summary>Edit product page</summary>
 
-![Update product html](docs/validation/validation_edit_products_page.jpg)
+![Update product html](docs/validation/html/validation_edit_products_page.jpg)
 </details>
 
 ### Bag page
 
 <details><summary>Bag page</summary>
 
-![Bag html](docs/validation/validation_bag_page.jpg)
+![Bag html](docs/validation/html/validation_bag_page.jpg)
 </details>
 
 ### Checkout page
 
 <details><summary>Checkout page</summary>
 
-![Checkout html](docs/validation/validation_checkout_page.jpg)
+![Checkout html](docs/validation/html/validation_checkout_page.jpg)
 </details>
 
 ### Checkout success page
 
 <details><summary>Checkout success page</summary>
 
-![Checkout success html](docs/validation/validation_checkout_success_page.jpg)
+![Checkout success html](docs/validation/html/validation_checkout_success_page.jpg)
 </details>
 
 ### Blog page
 
 <details><summary>Blog page</summary>
 
-![Blog html](docs/validation/validation_blog_page.jpg)
+![Blog html](docs/validation/html/validation_blog_page.jpg)
 </details>
 
 ### Contact page
 
 <details><summary>Contact page</summary>
 
-![Contact html](docs/validation/validation_contact_page.jpg)
+![Contact html](docs/validation/html/validation_contact_page.jpg)
 </details>
 
 ### Profile page
 
 <details><summary>Profile page</summary>
 
-![Profile html](docs/validation/validation_profile_page.jpg)
+![Profile html](docs/validation/html/validation_profile_page.jpg)
 </details>
 
 ### Wishlist page
 
 <details><summary>Wishlist page</summary>
 
-![Wishlist html](docs/validation/validation_wishlist_page.jpg)
+![Wishlist html](docs/validation/html/validation_wishlist_page.jpg)
 </details>
 
 ### Register page
 
 <details><summary>Signup page</summary>
 
-![Signup html](docs/validation/validation_signup_page.jpg)
+![Signup html](docs/validation/html/validation_signup_page.jpg)
 </details>
 
 ### Log In page
 
 <details><summary>Login page</summary>
 
-![Login html](docs/validation/validation_signin_page.jpg)
+![Login html](docs/validation/html/validation_signin_page.jpg)
 </details>
 
 ### Log Out page
 
 <details><summary>Logout page</summary>
 
-![Logout html](docs/validation/validation_logout_page.jpg)
+![Logout html](docs/validation/html/validation_logout_page.jpg)
 </details>
 
 ##### Back to [top](#table-of-contents)<hr> 
@@ -1027,24 +1027,42 @@ The [W3C Markup Validation Service](https://validator.w3.org/) was used to valid
 The [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS of the website.
 
 <details><summary>base.css</summary>
-<img src="docs/validation/base_css.jpg">
+<img src="docs/validation/css/base_css.jpg">
 </details> 
 
 <details><summary>blog.css</summary>
-<img src="docs/validation/blog.css.jpg">
+<img src="docs/validationcss/css/blog.css.jpg">
 </details> 
 
 <details><summary>checkout.css</summary>
-<img src="docs/validation/checkout.css.jpg">
+<img src="docs/validation/css/checkout.css.jpg">
 </details>
 
 <details><summary>profiles.css</summary>
-<img src="docs/validation/profile.css.jpg">
+<img src="docs/validation/css/profile.css.jpg">
 </details
 
 ##### Back to [top](#table-of-contents)<hr> 
 
 ### JavaScript Validation
+
+[JSHint](https://jshint.com/) javaScript Validation Service was used to validate all javaScript files.
+
+<details><summary>stripe-elements.js</summary>
+<img src="docs/validation/js/stripe-elements.jpg">
+</details
+
+- one undefined variable Stripe which originates from an external script
+
+<details><summary>map.js</summary>
+<img src="docs/validation/js/map.jpg">
+</details
+
+- two unused variables markerCluster and initMap two functions that are used by external Google Map script in contact html.
+
+<details><summary>countryfield.js</summary>
+<img src="docs/validation/js/countryfield.jpg">
+</details
 
 ##### Back to [top](#table-of-contents)<hr>  
 
