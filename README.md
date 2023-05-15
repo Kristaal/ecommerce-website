@@ -1254,13 +1254,185 @@ The [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) wa
 
 <br>
 
-##### Back to [top](#table-of-contents)<hr>  
-
-## Accessibility  
-
-##### Back to [top](#table-of-contents)<hr>  
+##### Back to [top](#table-of-contents)<hr>   
 
 ## Lighthouse
+
+### Home page
+
+<details><summary>Home</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/home_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/home_page_mobile.png">
+</details>
+
+<br>
+
+### Products page
+
+<details><summary>All Products</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/products_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/products_page_mobile.png">
+</details>
+
+<br>
+
+### Product details page
+
+<details><summary>Product details</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/product_details_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/product_details_page_mobile.png">
+</details>
+
+<br>
+
+### Add products page
+
+<details><summary>Add products</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/add_product_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/add_product_page_mobile.png">
+</details>
+
+<br>
+
+### Edit products page
+
+<details><summary>Edit products</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/edit_product_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/edit_product_page_mobile.png">
+</details>
+
+<br>
+
+### Bag page
+
+<details><summary>Bag</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/bag_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/bag_page_mobile.png">
+</details>
+
+<br>
+
+### Checkout page
+
+<details><summary>Checkout</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/checkout_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/checkout_page_mobile.png">
+</details>
+
+<br>
+
+### Checkout success page
+
+<details><summary>Checkout success</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/checkout_success_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/checkout_success_page_mobile.png">
+</details>
+
+<br>
+
+### Profile page
+
+<details><summary>Profile</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/profile_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/profile_page_mobile.png">
+</details>
+
+<br>
+
+### Wishlist page 
+
+<details><summary>Wishlist</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/wishlist_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/wishlist_page_mobile.png">
+</details>
+
+<br>
+
+### Blog page
+
+<details><summary>Blog</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/blog_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/bag_page_mobile.png">
+</details>
+
+<br>
+
+### Post details page
+
+<details><summary>Post details</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/post_details_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/post_details_page_mobile.png">
+</details>
+
+<br>
+
+### Contact page
+
+<details><summary>Contact</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/contact_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/contact_page_mobile.png">
+</details>
+
+<br>
+
+### Logout page
+
+<details><summary>Logout</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/logout_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/logout_page_mobile.png">
+</details>
+
+<br>
+
+### Sign in page
+
+<details><summary>Sign in</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/signin_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/signin_page_mobile.png">
+</details>
+
+<br>
+
+### Sign up page
+
+<details><summary>Sign up</summary>
+- Desktop
+  <img src="docs/validation/lighthouse/signup_page_desktop.png">
+- Mobile
+  <img src="docs/validation/lighthouse/signup_page_mobile.png">
+</details>
+
+<br>
 
 ##### Back to [top](#table-of-contents)<hr>
 
