@@ -1266,20 +1266,436 @@ The [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) wa
 
 ## Testing
 
-1. Manual testing User Stories
-2. Automated testing
-
 ### Manual testing
 
-### Automated testing
+1. As a first time user I can see a website description so that should help me understand what the site is about
 
-### Coverage  
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Home page | Open website| User can see website description | Works as expected |  
 
-### Device Testing & Browser compatibility
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-1.png">
+</details>  
+
+<br>
+
+2. As a user I can navigate across the site so that can move to each feature of the site easily
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation | Click any link in navigation | User can see the page he/she is intrested in | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-2.png">
+</details>  
+
+<br>
+
+3. As a shopper I can use a search on the website so that I can find specific product I would like to purchase
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation | Type name of product or categories that you want to find | User can see list of products | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-3.png">
+</details>
+
+<br>
+
+4. As a user I can look at footer so that I can see contact information, social links and website info
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Footer | Scroll down on any website page | User can see footer with all provided information | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-4.png">
+</details>  
+
+<br>
+
+5. As a user I can easily register for an account so that I can have a personal account and be able to view my profile
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation | Click register link | User can see registration page | Works as expected  |
+| Sign up / Register | Fill out the form provided | User receive confirmation email | Works as expected  |
+| Sign up / Register | Confirm email | User successfully signed and receive message about that | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-5-1.png">
+<img src="docs/testing/manual testing/test-5-2.png">
+<img src="docs/testing/manual testing/test-5-3.png">
+</details>
+
+<br>
+
+6. As a user I can login and logout so that I can access my personal account information
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation | Click login link | User can see login page | Works as expected  |
+| Login | Fill out the form provided | User receive a notification that user loggend in | Works as expected  |
+| Navigation | Click logout link | User can see logout confirmation page | Works as expected  |
+| Logout | Click sign out button | User logged out | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-6-1.png">
+<img src="docs/testing/manual testing/test-6-2.png">
+<img src="docs/testing/manual testing/test-6-3.png">
+<img src="docs/testing/manual testing/test-6-4.png">
+</details>
+
+<br>
+
+7. As an shopper I can receive an email confirmation after registering so that I can verify that my account registration was successful
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation and Sign up / Register | Click register link and Fill out the form provided  | User receive confirmation email | Works as expected  |
+| Sign up / Register | Confirm email | User successfully signed and receive message about that | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-7-1.png">
+<img src="docs/testing/manual testing/test-7-2.png">
+<img src="docs/testing/manual testing/test-7-3.png">
+<img src="docs/testing/manual testing/test-7-4.png">
+</details>
+
+<br>
+
+8. As a user I can have a profile so that I can store my information for faster checkouts
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Checkout  | Fill out the form provided for checkout | User can check their information | Works as expected  |
+| Checkout  | Click save information check field and click complete purchase | User can save their information for future checkouts | Works as expected  |
+| Profile  | Look at profile default delivery information | User can see their information for future checkouts and update it | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-8-1.png">
+<img src="docs/testing/manual testing/test-8-2.png">
+</details>
+
+<br>
+
+9. As a shopper I can view products so that I can choose something to buy
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation | Click shop link and choose categories or all products | User can see products that match the request | Works as expected  |
+| Home page | Click 'SHOP NOW' button | User can see all products provided | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-9-1.png">
+<img src="docs/testing/manual testing/test-9-2.png">
+</details>  
+
+<br>
+
+10. As a shopper  I can sort the list of available products so that I can identify the best rated, best priced and categorically sorted products
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Products list page  | Select an option in Sort by filed | User can see list of items that suits sort option | Works as expected  |
+| Products list page  | Click one of the  category buttons | User can see list of items that suits selected category | Works as expected |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-10.png">
+</details>
+
+<br>
+
+11. As a shopper I can view individual product details so that I can identify the price, description, rating and view reviews
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Products list page | Click on interested product image or product name | User can see products details | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-11-1.png">
+<img src="docs/testing/manual testing/test-11-2.png">
+</details> 
+
+<br>
+
+12. As an owner I can add new products to the store so that we can sell more items to our customers
+
+Functionality available only for website Admin or Authorised user by Admin
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Add product | Select in the navbar Product management | Admin can see add product page| Works as expected  |
+| Add product | Fill out the form and select "Add Product" button | Admin successfully added product| Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-12-1.png">
+<img src="docs/testing/manual testing/test-12-2.png">
+<img src="docs/testing/manual testing/test-12-3.png">
+</details>
+
+<br>
+
+13. As an owner I can remove items from the store so that customers no longer see items I do not intend to sell again
+
+Functionality available only for website Admin or Authorised user by Admin
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Delete product | Select delete button inside product details | Admin can delete the product | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-13-1.png">
+<img src="docs/testing/manual testing/test-13-2.png">
+</details>
+
+<br>
+
+14. As an owner I can edit products so that products have the correct information and/or pricing
+
+Functionality available only for website Admin or Authorised user by Admin
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Edit product | Select edit button inside product details | Admin can Admin can see add product page| Works as expected  |
+| Edit product| Fill out the form and select "Edit Product" button | Admin successfully updated the product after filled out form| Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-14-1.png">
+<img src="docs/testing/manual testing/test-14-2.png">
+<img src="docs/testing/manual testing/test-14-3.png">
+</details>
+
+<br>
+
+15. As a shopper  I can add products to bag so that I can review my items before I buy them
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Products details | Click add to bag button | Product added bag | Works as expected  |
+| Products list page | Click cart icon on product card | Product added to bag | Works as expected  |
+| Bag | Click plus or minus button in quantity section | Item quantity has been changed | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-15-1.png">
+<img src="docs/testing/manual testing/test-15-2.png">
+<img src="docs/testing/manual testing/test-15-3.png">
+</details> 
+
+<br>
+
+16. As a shopper I can remove items from my cart so that I can start my shopping again or decide against placing an order
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Bag | Click "REMOVE" button in the bag | Item has been removed from the bag  | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-16-1.png">
+<img src="docs/testing/manual testing/test-16-2.png">
+
+</details> 
+
+<br>
+
+17. As a shopper I can add to wishlist some products so that I can come back to wishlist and buy interested products
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Products details | Click heart icon under product image on product detail page | Product added to wishlist | Works as expected  |
+| Products list page | Click heart icon on product card | Product added to wishlist | Works as expected  |
+| Wishlist | Click bag icon on item | Product added to bag | Works as expected  |
+| Wishlist | Click trash icon on item | Product removed form wishlist | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-17-1.png">
+<img src="docs/testing/manual testing/test-17-2.png">
+<img src="docs/testing/manual testing/test-17-3.png">
+<img src="docs/testing/manual testing/test-17-4.png">
+</details> 
+
+<br>
+
+18. As a shopper I can be interested in previous shopper experience so that I can choose a product according to the best reviews
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Products details | Scroll product details page to the section with reviews | User can see all reviews under product | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-18.png">
+</details> 
+
+<br>
+
+19. As a shopper I can leave my own review on each product so that I can rate the product and write about its advantages or disadvantages
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Products details | Scroll product details page to the section with reviews, write review and click button "Submit Review" | User can leave review with rate | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-19-1.png">
+<img src="docs/testing/manual testing/test-19-2.png">
+</details> 
+
+<br>
+20. As a shopper I can easily enter my payment information so that I can check out quickly and with no hassles
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Checkout, Stripe  | Scroll down to payment section | User can see form to input card details | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-20.png">
+</details> 
+
+<br>
+
+21. As a shopper I can pay for product so that I can complete the payment through secure checkout
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Checkout  | Fill out the form provided for checkout | User can pay for product if he has enough money on his card  | Works as expected  |
+| Checkout success |  No action | User can see confirmation page about his order  | Works as expected  |
+| Checkout success |  No action | User received confirmation email | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-21-1.png">
+<img src="docs/testing/manual testing/test-21-2.jpg">
+<img src="docs/testing/manual testing/test-21-3.png">
+</details>
+
+<br>
+
+22. As a shopper I can see my orders so that I can track the progress of all my orders
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation | Click profile link to open profile page | User can see profile page | Works as expected  |
+| Profile page | Look at order history section | User can see all their orders | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-22.png">
+</details>
+
+<br>
+
+23. As a shopper I can look at blog so that it provides me regular updates through published posts
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation | Click blog link | User can see blog posts | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-23.png">
+</details>  
+
+<br>
+
+24. As a shopper I can contact the business so that I can communicate with a person
+
+User has to be logged in to send messages
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation | Click contact link to open contact page | User can see contact page | Works as expected  |
+| Contact page | Fill out the form provided and click send | User can see confirmation about message has been sent | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-24-1.png">
+<img src="docs/testing/manual testing/test-24-2.png">
+</details>
+
+<br>
+
+25. As a user I can find the store's social networks so that see all the information and updates
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Footer | Scroll down on any website page | User can see the store's social networks | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-25.png">
+</details>  
+
+<br>
+
+26. As a shopper I can sign up for a newsletter so that I can get access to special offers or promotions
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Footer | Scroll down on any website page and finf mailchimp| Users will receive updates on new features, upcoming events, and exclusive promotions | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-26.png">
+</details>  
+
+<br>
+
+27. As a shopper I can quickly identify deals clearance items and special offers so that I can take advantage of special saving on products I'd like to purchase
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation | Choose special offers | User can see list of products with tags | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-27.png">
+</details>
+
+<br>
+
+28. As a shopper I can easily view the total of my purchases at any time so that avoid spending too much
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation | Click on icon "BAG" on any website page | User can see list of products in the bag and see total of purchases| Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-28.png">
+</details>
+
+<br>
+
+29. As a user I can see my order history so that I always know what product I bought and have access to order the product again if I liked it
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation | Click profile link to open profile page | User can see profile page | Works as expected  |
+| Profile page | Look at order history section | User can see all their orders | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-29.png">
+</details>
+
+<br>
+
+30. As a user I can receive am email from shop where I ordered items so that I always confirm my purchase and know what I ordered
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Email confirmation  | Go to your email page | User can see confirmation email about their order  | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="docs/testing/manual testing/test-30.png">
+</details>
+
+<br>
 
 ##### Back to [top](#table-of-contents)<hr>
 
-## Bugs
+### Device Testing & Browser compatibility
+
+The site uses to test on various real world devices. The following devices were used to test my site:
+  - Apple iPhone 13 Pro
+  - Apple iPhone 14
+  - Samsung Galaxy S21
+  - Microsoft Edge
+  - Google Chrome
+
+##### Back to [top](#table-of-contents)<hr>
 
 ##### Back to [top](#table-of-contents)<hr>
 
