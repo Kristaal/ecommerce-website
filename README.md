@@ -622,18 +622,28 @@ I used meta keywords that make it possible for people to find my site via search
 
 <details><summary>See feature images</summary>
 
-![Sorting field]()
+![Sorting field](docs/features/sort.png)
 </details>  
 
 ### Products details
-  - Products details page contains album image, album description, quantity input, add to bag button.
-  - Page provides add to wish list button and album tracklist.
-  - User allowed to add album to wish list or remove accordingly.
+  - Products details page contains product image, description, quantity input, add to bag button.
+  - Page provides add to wish list button.
+  - User allowed to add product to wish list or remove accordingly.
   - User stories covered: 
 
 <details><summary>See feature images</summary>
 
-![Products details](docs/features/product-details.png)
+![Products details](docs/features/product_details.png)
+</details>
+
+### Add to wishlist
+  - Allows the User to add products to the wishlist
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Add to wishlist-1](docs/features/add_to_wishlist.png)
+![Add to wishlist-2](docs/features/add_to_wishlist2.png)
 </details>
 
 ### Reviews
@@ -642,7 +652,7 @@ I used meta keywords that make it possible for people to find my site via search
   
 <details><summary>See feature images</summary>
 
-![Reviews]()
+![Reviews](docs/features/reviews.png)
 </details>
 
 ### Add Product
@@ -651,7 +661,8 @@ I used meta keywords that make it possible for people to find my site via search
 
 <details><summary>See feature images</summary>
 
-![Add product](docs/features/add-product.png)
+![Add product-1](docs/features/add-product.png)
+![Add product-2](docs/features/add-product2.png)
 </details>
 
 ### Edit Product
@@ -660,7 +671,8 @@ I used meta keywords that make it possible for people to find my site via search
 
 <details><summary>See feature images</summary>
 
-![Edit product](docs/features/edit-product.png)
+![Edit product-1](docs/features/edit-product.png)
+![Edit product-2](docs/features/edit-product.png)
 </details>
 
 ### Delete Product
@@ -669,14 +681,15 @@ I used meta keywords that make it possible for people to find my site via search
 
 <details><summary>See feature images</summary>
 
+![Delete product](docs/features/edit-product.png)
 ![Delete product](docs/features/delete-product.png)
 </details>
 
 ### Bag
   - Contains all products which user selected to buy
   - User can change item quantity
-  - User can go to secure checkout page by clik on button
-  - User stories covered: 10.
+  - User can go to secure checkout page by click on button
+  - User stories covered: 
 
 <details><summary>See feature images</summary>
 
@@ -684,7 +697,7 @@ I used meta keywords that make it possible for people to find my site via search
 </details>
 
 ### Checkout
-  - Allows the user to purchase items in their basket.
+  - Allows the user to purchase items in their bag.
   - User stories covered: 
 
 <details><summary>See feature images</summary>
@@ -707,7 +720,9 @@ I used meta keywords that make it possible for people to find my site via search
 
 <details><summary>See feature images</summary>
 
-![Email confirm](docs/features/email-confirmation.png)
+![Email confirmation message](docs/features/confirmation_email_message.jpg)
+![Email confirmation](docs/features/confirmation_email.png)
+![Email confirmation in the terminal](docs/features/confirmation_email_terminal.png)
 </details>
 
 ### Checkout success
@@ -718,7 +733,6 @@ I used meta keywords that make it possible for people to find my site via search
 
 ![Checkout](docs/features/success.png)
 </details>
-
 
 ### Blog page
 
@@ -737,7 +751,7 @@ I used meta keywords that make it possible for people to find my site via search
   
 <details><summary>See feature images</summary>
 
-![Pagination](https://raw.githubusercontent.com/ArronBeale/CI_PP5_tee_time/main/docs/features/feature-pagination.PNG)
+![Pagination](docs/features/pagination.png)
 </details>
 
 ### Post details page
@@ -768,7 +782,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 <details><summary>See feature images</summary>
 
-![Blog page](docs/features/blog.png)
+![Blog page](docs/features/map.png)
 </details>
 
 ### Wishlist
@@ -780,7 +794,8 @@ I used meta keywords that make it possible for people to find my site via search
 
 <details><summary>See feature images</summary>
 
-![Wishlist](docs/features/wishlist.png)
+![Wishlist-1](docs/features/wishlist_1.png)
+![Wishlist-2](docs/features/wishlist.png)
 </details>
 
 ### Profile 
@@ -790,7 +805,8 @@ I used meta keywords that make it possible for people to find my site via search
 
 <details><summary>See feature images</summary>
 
-![Profile](docs/features/profile.png)
+![Profile-1](docs/features/profile.png)
+![Profile-2](docs/features/profile1.png)
 </details>
 
 ### Notifications container
@@ -809,7 +825,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 <details><summary>See feature image</summary>
 
-![Signup]()
+![Signup](docs/features/signup.png)
 </details>
 
 ### Sign In
@@ -819,7 +835,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 <details><summary>See feature images</summary>
 
-![Signin]()
+![Signin](docs/features/signin.png)
 </details>
 
 ### Sign Out
@@ -830,7 +846,7 @@ I used meta keywords that make it possible for people to find my site via search
 
 <details><summary>See feature image</summary>
 
-![Sign out](https://raw.githubusercontent.com/ArronBeale/CI_PP5_tee_time/main/docs/features/feature-sign-out.PNG)
+![Sign out](docs/features/signout.png)
 </details>  
 
 ##### Back to [top](#table-of-contents)<hr>
