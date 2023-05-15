@@ -913,6 +913,113 @@ I used meta keywords that make it possible for people to find my site via search
 
 ## HTML Validation
 
+The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML code of the website. 
+
+### Home page
+
+<details><summary>Home page</summary>
+
+![Home html](docs/validation/validation_home_page.jpg)
+</details>
+
+### Products page
+
+<details><summary>Products page</summary>
+
+![Products html](docs/validation/validation_products_page.png)
+</details>
+
+### Product details page
+
+<details><summary>Product details page</summary>
+
+![Product detail html](docs/validation/vaidation_product_details_page.jpg)
+</details>
+
+### Add product page
+
+<details><summary>Add product page</summary>
+
+![Add product html](docs/validation/validation_add_products_page.jpg)
+</details>
+
+### Edit product page
+
+<details><summary>Edit product page</summary>
+
+![Update product html](docs/validation/validation_edit_products_page.jpg)
+</details>
+
+### Bag page
+
+<details><summary>Bag page</summary>
+
+![Bag html](docs/validation/validation_bag_page.jpg)
+</details>
+
+### Checkout page
+
+<details><summary>Checkout page</summary>
+
+![Checkout html](docs/validation/validation_checkout_page.jpg)
+</details>
+
+### Checkout success page
+
+<details><summary>Checkout success page</summary>
+
+![Checkout success html](docs/validation/validation_checkout_success_page.jpg)
+</details>
+
+### Blog page
+
+<details><summary>Blog page</summary>
+
+![Blog html](docs/validation/validation_blog_page.jpg)
+</details>
+
+### Contact page
+
+<details><summary>Contact page</summary>
+
+![Contact html](docs/validation/validation_contact_page.jpg)
+</details>
+
+### Profile page
+
+<details><summary>Profile page</summary>
+
+![Profile html](docs/validation/validation_profile_page.jpg)
+</details>
+
+### Wishlist page
+
+<details><summary>Wishlist page</summary>
+
+![Wishlist html](docs/validation/validation_wishlist_page.jpg)
+</details>
+
+### Register page
+
+<details><summary>Signup page</summary>
+
+![Signup html](docs/validation/validation_signup_page.jpg)
+</details>
+
+### Log In page
+
+<details><summary>Login page</summary>
+
+![Login html](docs/validation/validation_signin_page.jpg)
+</details>
+
+### Log Out page
+
+<details><summary>Logout page</summary>
+
+![Logout html](docs/validation/validation_logout_page.jpg)
+</details>
+
 ##### Back to [top](#table-of-contents)<hr> 
 
 ### CSS Validation
