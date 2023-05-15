@@ -117,7 +117,7 @@ Beauty Bliss uses Mailchimp to manage its mailing list. By joining the mailing l
 
 <details><summary>See Image</summary>
 
-![Mailchimp](docs/mailchimp.png)  
+![Mailchimp](docs/features/mailchimp.png)  
 </details> 
 <br>
 
@@ -338,11 +338,11 @@ AWS S3 bucket was chosen to store website static and media data. It's a reliable
 ![aws media](docs/aws/aws_media.png)
 ![aws static](docs/aws/aws_static.png)
 </details>
-<hr>
+<br>
+
+##### Back to [top](#table-of-contents)<hr>
 
 ## Database
-
-
 
 <details><summary>See Database Image</summary>
 <img src="docs/database.png">
@@ -479,15 +479,43 @@ OrderLineItem Model
 |            | quantity         | IntegerField    |
 |            | lineitem_total  | DecimalField[6] |
 
-##### Back to [top](#table-of-contents)
-<hr>
-
+##### Back to [top](#table-of-contents)<hr>
 
 ## Technologies Used
 
 ### Languages & Frameworks
 
+- HTML
+- CSS
+- Javascript
+- Python
+- Django
+
 ### Libraries & Tools
+
+
+- [Am I Responsive](http://ami.responsivedesign.is/)
+- [Balsamiq](https://balsamiq.com/)
+- [Bootstrap v4.6.2](https://getbootstrap.com/)
+- [Cloudinary](https://cloudinary.com/)
+- [Favicon.io](https://favicon.io)
+- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
+- [Font Awesome](https://fontawesome.com/)
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Heroku Platform](https://id.heroku.com/login)
+- [AWS](https://aws.amazon.com/)
+- [jQuery](https://jquery.com)
+- [Postgres](https://www.postgresql.org/)
+- [Summernote](https://summernote.org/)
+- Validation:
+  - [WC3 Validator](https://validator.w3.org/)
+  - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
+  - [JShint](https://jshint.com/)
+  - [CI Python Liner(PEP8)](https://pep8ci.herokuapp.com/)
+  - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+  - [Wave Validator](https://wave.webaim.org/)
 
 ##### Back to [top](#table-of-contents)
 
@@ -495,16 +523,314 @@ OrderLineItem Model
 
 ### Search Engine Optimisation (SEO)
 
+I used meta keywords that make it possible for people to find my site via search engines. Keywords are ideas and topics that define what my website content is about.
+
 <details><summary>See feature image</summary>
 
-![SEO]()
+![SEO](docs/features/meta_keywords.png)
+</details>  
+
+### Logo
+
+- A custom logo for the business included only letters.
+- User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Logo](docs/features/logo.png)
 </details>  
 
 ### Home page
 
+- Home page includes navbar, main website slider with images, main text, button "Shop now" and a footer with website information.
+- User stories covered: 
+
 <details><summary>See feature images</summary>
 
-![Home page]()
+![Home page](docs/features/home_page.png)
+</details>  
+
+### Navigation
+  - Navbar includes links to all products, blog page, contact page, bag, profile page, and wish list
+  - Navbar has search field for products searching
+  - Indicates login/logout and register in status.
+  - Fully Responsive.
+  - On small screens switches to hamburger menu.
+  - Displayed on all pages
+  - User stories covered:
+
+<details><summary>See feature images</summary>
+
+![Navbar](docs/features/navbar.png)
+![Navbar2](docs/features/navbar_2.png)
+</details>  
+
+### Search
+- Allows the user to search for products.  
+- User stories covered: 
+
+<details><summary>See feature image</summary>
+
+![Search](docs/features/navbar_search.png)
+![Search](docs/features/navbar2_search.png)
+</details>  
+
+### Footer
+- Contains social media links, links, privacy policy, contacts and newsletter, 
+- displayed across all pages.  
+- User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Footer](docs/features/footer.png)
+</details> 
+
+### Mailing List Sign Up
+- Mailchimp signup for email mailing list. 
+- User stories covered:  
+
+<details><summary>See feature images</summary>
+
+![Mailing](docs/features/mailchimp.png)
+</details>
+
+### Social Media Links
+- A link is used for the Facebook business page.
+- All links open in a new tab to ensure the user is not directed away from the business.
+- noopener, noreferrer, nofollow used to communicate with web crawlers and for security and privacy concerns.  
+- User stories covered: 
+  
+<details><summary>See feature image</summary>
+
+![Social Media Links](docs/features/social_links.png)
+</details>
+
+### Products  page
+  - Products list page contains all products cards, buttons to sort by categories.
+  - User allowed to add each product to bag or put it in wish list.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Products list](docs/features/all-products.png)
+</details>
+
+
+### Sorting field
+- Allows the user to sort the listed products.  
+- User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Sorting field]()
+</details>  
+
+### Products details
+  - Products details page contains album image, album description, quantity input, add to bag button.
+  - Page provides add to wish list button and album tracklist.
+  - User allowed to add album to wish list or remove accordingly.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Products details](docs/features/product-details.png)
+</details>
+
+### Reviews
+- Only registered users can leave a reviews on product
+- User stories covered: 
+  
+<details><summary>See feature images</summary>
+
+![Reviews]()
+</details>
+
+### Add Product
+  - Allows the Admin to add new products.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Add product](docs/features/add-product.png)
+</details>
+
+### Edit Product
+  - Allows the Admin to edit the products.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Edit product](docs/features/edit-product.png)
+</details>
+
+### Delete Product
+  - Allows the Admin to delete products, includes confirmation message before deletion.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Delete product](docs/features/delete-product.png)
+</details>
+
+### Bag
+  - Contains all products which user selected to buy
+  - User can change item quantity
+  - User can go to secure checkout page by clik on button
+  - User stories covered: 10.
+
+<details><summary>See feature images</summary>
+
+![Bag](docs/features/bag.png)
+</details>
+
+### Checkout
+  - Allows the user to purchase items in their basket.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Checkout](docs/features/checkout.png)
+</details>
+
+### Stripe
+  - Allows the user to use stripe for card payments.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Stripe](docs/features/stripe.png)
+</details>
+
+### Email Confirmation
+  - Allows the user to receive an email confirmation for their order.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Email confirm](docs/features/email-confirmation.png)
+</details>
+
+### Checkout success
+  - Shows the page confirmation with user order.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Checkout](docs/features/success.png)
+</details>
+
+
+### Blog page
+
+  - Blog page contains posts cards with images and post title on each card.
+  - Blog page includes pagination for 6 posts on the page
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Blog page](docs/features/blog.png)
+</details>
+
+### Pagination
+- Blog page includes pagination for 6 posts on the page
+- Ensures the page is kept tidy  
+  
+<details><summary>See feature images</summary>
+
+![Pagination](https://raw.githubusercontent.com/ArronBeale/CI_PP5_tee_time/main/docs/features/feature-pagination.PNG)
+</details>
+
+### Post details page
+
+  - Post details page provides post content.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Post details](docs/features/post-details.png)
+</details>
+
+### Contact page
+
+  - Contact page contains message form, contact information and google map with mark on it for the business.
+  - Only loged in users can send a message to website owner.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Contact](docs/features/contact.png)
+</details>
+
+### Map
+
+  - Contact page contains map with address of the business.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Blog page](docs/features/blog.png)
+</details>
+
+### Wishlist
+
+  - Allows user to add favourite items to wished list
+  - User can delete item from wish list or add it to bag
+  - Wishlist works on all products page and in product details
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Wishlist](docs/features/wishlist.png)
+</details>
+
+### Profile 
+
+  - Allows the user to update their information and see their order history.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Profile](docs/features/profile.png)
+</details>
+
+### Notifications container
+  - Allows the user to see relevant notifications.
+  - User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Email confirm](docs/features/notification.png)
+</details>
+
+### Sign up / Register
+
+- Allow users to register an acoount.
+- User stories covered: 
+
+<details><summary>See feature image</summary>
+
+![Signup]()
+</details>
+
+### Sign In
+
+- User can sign in.  
+- User stories covered: 
+
+<details><summary>See feature images</summary>
+
+![Signin]()
+</details>
+
+### Sign Out
+
+- Allows the user to securely sign out.
+- Ask user if they are sure they want to sign out.  
+- User stories covered: 
+
+<details><summary>See feature image</summary>
+
+![Sign out](https://raw.githubusercontent.com/ArronBeale/CI_PP5_tee_time/main/docs/features/feature-sign-out.PNG)
 </details>  
 
 ##### Back to [top](#table-of-contents)<hr>
