@@ -80,7 +80,7 @@
                                     <p class="my-0">My Account</p>
                                 </div>
                             </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            <div class="dropdown-menu border-0" aria-labelledby="users-options">
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
                                         <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
@@ -209,9 +209,6 @@
             <!-- mailchimp-->
             <div class="mailchimp col-md-4 col-lg-3 col-xl-3 mx-auto">
                 <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                    #mc_embed_signup{background:#fff; clear:left; width:300px;}
-                </style>
                     <div id="mc_embed_signup">
                     <form 
                     action="https://gmail.us11.list-manage.com/subscribe/post?u=c4e558d086fd05f2b79640789&amp;id=133af14161&amp;f_id=003d99e0f0" 
@@ -239,6 +236,8 @@
                     </div>
                     </form>
                     </div>
+                </div>
+            </div>
         </div>
       </section>
        <!-- Copyright -->
@@ -253,8 +252,8 @@
     <script>
     $('.toast').toast('show');
     </script>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script type='text/javascript'>
+    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script>
     (function($) {
         window.fnames = new Array(); 
         window.ftypes = new Array();

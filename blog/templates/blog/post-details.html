@@ -35,7 +35,7 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript">
+    <script>
         var value = $('.content').val()
         console.log(value);
         $('textarea.content-body').summernote('pasteHTML', value);

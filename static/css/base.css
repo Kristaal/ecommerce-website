@@ -572,6 +572,9 @@ a:hover {
     text-decoration: line-through;
 }
 
+/* mailchimp */
+#mc_embed_signup{background:#fff; clear:left; width:300px;}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

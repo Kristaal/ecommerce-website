@@ -149,12 +149,12 @@
                         {% csrf_token %}
                         <h5 class="mt-5">Give Review</h5>
                         <label for="stars">Stars <i class="fa fa-star"></i></label>
-                        <select class="form-select" name="stars" id="stars" selected="3">
+                        <select class="form-select" name="stars" id="stars">
                             <option value="1">1</option>
-                            <option value="2">2</i></option>
+                            <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
-                            <option value="5" selected>5</i></option>
+                            <option value="5" selected>5</option>
                         </select>
                         <label for="content">Review</label>
                         <textarea class="form-control" name="content" id="content" cols="30" rows="5"></textarea>
@@ -170,7 +170,7 @@
                 </div>
             </div>
         </div>
-    </div>
+
 {% endblock %}
 
 {% block postloadjs %}
