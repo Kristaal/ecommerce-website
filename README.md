@@ -125,7 +125,7 @@ Beauty Bliss uses Mailchimp to manage its mailing list. By joining the mailing l
 
 The website Beauty Bliss has a presence on Facebook. The Facebook page serves as a platform to promote upcoming events, post updates on the latest features, and share user-generated content. This social media account allow users to stay informed.
 
-[Facebook]()  
+[Facebook](https://www.facebook.com/profile.php?id=100092848533079)  
 
 ### Blog
 
@@ -1067,6 +1067,192 @@ The [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) wa
 ##### Back to [top](#table-of-contents)<hr>  
 
 ## PEP8 Validation
+
+[CI Python Linter](https://pep8ci.herokuapp.com/) was used to check the code for PEP8 requirements
+
+### Bag
+
+  <details><summary>contexts.py</summary>
+  <img src="docs/validation/pep8/bag_contexts.jpg">
+  </details>
+
+  <details><summary>models.py</summary>
+  <img src="docs/validation/pep8/bag_models.jpg">
+  </details>
+
+  <details><summary>urls.py</summary>
+  <img src="docs/validation/pep8/bag_urls.jpg">
+  </details>
+
+  <details><summary>views.py</summary>
+  <img src="docs/validation/pep8/bag_views.jpg">
+  </details>
+
+<br>
+
+### Blog
+  
+  <details><summary>admin.py</summary>
+  <img src="docs/validation/pep8/blog_admin.jpg">
+  </details>
+
+  <details><summary>apps.py</summary>
+  <img src="docs/validation/pep8/blog_apps.jpg">
+  </details>
+
+  <details><summary>models.py</summary>
+  <img src="docs/validation/pep8/blog_models.jpg">
+  </details>
+
+  <details><summary>urls.py</summary>
+  <img src="docs/validation/pep8/blog_urls.jpg">
+  </details>
+
+  <details><summary>views.py</summary>
+  <img src="ddocs/validation/pep8/blog_views.jpg">
+  </details>
+
+<br>
+
+### Checkout
+
+  <details><summary>admin.py</summary>
+  <img src="docs/validation/pep8/checkout_admin.png">
+  </details>
+
+  <details><summary>apps.py</summary>
+  <img src="docs/validation/pep8/checkout_apps.png">
+  </details>
+
+  <details><summary>forms.py</summary>
+  <img src="docs/validation/pep8/checkout_forms.png">
+  </details>
+
+  <details><summary>models.py</summary>
+  <img src="docs/validation/pep8/checkout_models.png">
+  </details>
+
+  <details><summary>signals.py</summary>
+  <img src="docs/validation/pep8/checkout_signals.png">
+  </details>
+
+  <details><summary>urls.py</summary>
+  <img src="docs/validation/pep8/checkout_urls.png">
+  </details>
+
+  <details><summary>views.py</summary>
+  <img src="docs/validation/pep8/checkout_views.png">
+  </details>
+
+  <details><summary>webhook_handler.py</summary>
+  <img src="docs/validation/pep8/checkout_webhook_handler.png">
+  </details>
+
+  <details><summary>webhooks.py</summary>
+  <img src="docs/validation/pep8/checkout_webhooks.jpg">
+  </details>
+
+<br>
+
+### Contact 
+
+  <details><summary>admin.py</summary>
+  <img src="docs/validation/pep8/contact_admin.png">
+  </details>
+
+  <details><summary>apps.py</summary>
+  <img src="docs/validation/pep8/contact_apps.png">
+  </details>
+
+  <details><summary>forms.py</summary>
+  <img src="docs/validation/pep8/contact_forms.png">
+  </details>
+
+  <details><summary>models.py</summary>
+  <img src="docs/validation/pep8/contact_models.png">
+  </details>
+
+  <details><summary>urls.py</summary>
+  <img src="docs/validation/pep8/contact_urls.png">
+  </details>
+
+  <details><summary>views.py</summary>
+  <img src="docs/validation/pep8/contact_views.png">
+  </details>
+
+<br>
+
+### Home
+
+  <details><summary>apps.py</summary>
+  <img src="docs/validation/pep8/home_apps.png">
+  </details>
+
+  <details><summary>urls.py</summary>
+  <img src="docs/validation/pep8/home_urls.png">
+  </details>
+
+  <details><summary>views.py</summary>
+  <img src="docs/validation/pep8/home_views.png">
+  </details>
+
+<br>
+
+### Products
+
+  <details><summary>admin.py</summary>
+  <img src="docs/validation/pep8/products_admin.png">
+  </details>
+
+  <details><summary>apps.py</summary>
+  <img src="docs/validation/pep8/products_apps.png">
+  </details>
+
+  <details><summary>forms.py</summary>
+  <img src="docs/validation/pep8/products_forms.png">
+  </details>
+
+  <details><summary>models.py</summary>
+  <img src="docs/validation/pep8/products_models.png">
+  </details>
+
+  <details><summary>urls.py</summary>
+  <img src="docs/validation/pep8/products_urls.png">
+  </details>
+
+  <details><summary>views.py</summary>
+  <img src="docs/validation/pep8/products_views.png">
+  </details>
+
+  <details><summary>widgets.py</summary>
+  <img src="docs/validation/pep8/products_widgets.png">
+  </details>
+
+<br>
+
+### Profiles
+
+  <details><summary>apps.py</summary>
+  <img src="docs/validation/pep8/profiles_apps.png">
+  </details>
+
+  <details><summary>forms.py</summary>
+  <img src="docs/validation/pep8/profiles_forms.png">
+  </details>
+
+  <details><summary>models.py</summary>
+  <img src="docs/validation/pep8/profiles_models.png">
+  </details>
+
+  <details><summary>urls.py</summary>
+  <img src="docs/validation/pep8/profiles_urls.png">
+  </details>
+
+  <details><summary>views.py</summary>
+  <img src="docs/validation/pep8/profiles_views.png">
+  </details>
+
+<br>
 
 ##### Back to [top](#table-of-contents)<hr>  
 
