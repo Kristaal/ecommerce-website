@@ -54,7 +54,7 @@ def all_products(request):
     if user.is_authenticated:
         wishlist = Wishlist.objects.filter(user=user)
         for i in wishlist:
-            wished_list.append(i.product)   
+            wished_list.append(i.product)
 
     current_sorting = f'{sort}_{direction}'
 
@@ -102,7 +102,7 @@ def product_detail(request, product_id):
         else:
             messages.error(request, 'Failed to add review.\
                  Please check that the form is valid.')
-       
+
     context = {
         'product': product,
         'form': form,
@@ -215,6 +215,7 @@ def add_to_wishlist(request, product_id, user_id):
         messages.info(request, 'Product is already in your wishlist.')
 
     return redirect(reverse('product_detail', args=[product_id]))
+
 
 @login_required
 def remove_from_wishlist(request, wishlist_id):
