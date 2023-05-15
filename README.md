@@ -1024,6 +1024,24 @@ The [W3C Markup Validation Service](https://validator.w3.org/) was used to valid
 
 ### CSS Validation
 
+The [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS of the website.
+
+<details><summary>base.css</summary>
+<img src="docs/validation/base_css.jpg">
+</details> 
+
+<details><summary>blog.css</summary>
+<img src="docs/validation/blog.css.jpg">
+</details> 
+
+<details><summary>checkout.css</summary>
+<img src="docs/validation/checkout.css.jpg">
+</details>
+
+<details><summary>profiles.css</summary>
+<img src="docs/validation/profile.css.jpg">
+</details
+
 ##### Back to [top](#table-of-contents)<hr> 
 
 ### JavaScript Validation
