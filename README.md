@@ -283,6 +283,64 @@ A sitemap.xml file This file was added to help speed up content discovery for se
 
 ## Wireframes
 
+Balsamiq was used to create wireframes for this project.
+
+### Home Page
+
+<details><summary>Wireframe Home</summary>
+
+![Home](docs/wireframes/wireframe_home.png)
+</details>
+
+### Products Page
+
+<details><summary>Wireframe Products</summary>
+
+![Products](docs/wireframes/wireframe_products.png)
+</details>
+
+### Product Details Page
+
+<details><summary>Wireframe Product Details</summary>
+
+![Product details](docs/wireframes/wireframe_product_detail.png)
+</details>
+
+### Bag Page
+
+<details><summary>Wireframe Bag</summary>
+
+![Bag](docs/wireframes/wireframe_bag.png)
+</details>
+
+### Profile Page
+
+<details><summary>Wireframe Profile</summary>
+
+![Profile](docs/wireframes/wireframe_profile.png)
+</details>
+
+### Wishlist Page
+
+<details><summary>Wireframe Wishlist</summary>
+
+![Wishlist](docs/wireframes/wireframe_wishlist.png)
+</details>
+
+### Blog Page
+
+<details><summary>Wireframe Blog</summary>
+
+![Blog](docs/wireframes/wireframe_blog.png)
+</details>
+
+### Contact Page
+
+<details><summary>Wireframe Contact</summary>
+
+![Contact](docs/wireframes/wireframe_contact.png)
+</details>
+
 ##### Back to [top](#table-of-contents)<hr>
 
 ## Design
