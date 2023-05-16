@@ -39,18 +39,17 @@
 - [AWS](#aws)
 - [Database](#database)
 - [Models](#models)
-  - [Technologies Used](#technologies-used)
-  - [Features](#features)
-  - [Validation](#validation)
-  - [Testing](#testing)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Validation](#validation)
+- [Testing](#testing)
     - [Manual testing](#manual-testing)
-    - [Automated testing](#automated-testing)
     - [Tests on various devices](#tests-on-various-devices)
     - [Browser compatibility](#browser-compatibility)
-  - [Bugs](#bugs)
-  - [Deployment](#deployment)
-  - [Credits](#credits)
-  - [Acknowledgements](#acknowledgements)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
 
   <hr>
 
@@ -1022,7 +1021,7 @@ The [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) wa
 </details> 
 
 <details><summary>blog.css</summary>
-<img src="docs/validationcss/css/blog.css.jpg">
+<img src="docs/validation/css/blog.css.jpg">
 </details> 
 
 <details><summary>checkout.css</summary>
@@ -1100,7 +1099,7 @@ The [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) wa
   </details>
 
   <details><summary>views.py</summary>
-  <img src="ddocs/validation/pep8/blog_views.jpg">
+  <img src="docs/validation/pep8/blog_views.jpg">
   </details>
 
 <br>
